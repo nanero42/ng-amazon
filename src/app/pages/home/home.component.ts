@@ -2,13 +2,13 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-home-page',
+  selector: 'app-home',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss'],
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HomePageComponent {
+export class HomeComponent {
 
 }
