@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "amazon-clone": {
+    "ng-amazon": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -26,7 +26,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/amazon-clone",
+            "outputPath": "dist/ng-amazon",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "amazon-clone:build:production"
+              "browserTarget": "ng-amazon:build:production"
             },
             "development": {
-              "browserTarget": "amazon-clone:build:development"
+              "browserTarget": "ng-amazon:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "amazon-clone:build"
+            "browserTarget": "ng-amazon:build"
           }
         },
         "test": {
