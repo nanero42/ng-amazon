@@ -1,20 +1,18 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IconComponent } from '../icon';
-import { AutocompleteComponent } from '../autocomplete';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-autocomplete',
   standalone: true,
   imports: [
     CommonModule,
     IconComponent,
-    AutocompleteComponent,
   ],
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  templateUrl: './autocomplete.component.html',
+  styleUrls: ['./autocomplete.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HeaderComponent {
+export class AutocompleteComponent {
 
 }
