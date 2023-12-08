@@ -1,0 +1,3 @@
+- add truncate to deliver-to
+- finish autocomplete
+- add fonts
