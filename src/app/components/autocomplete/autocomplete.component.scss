@@ -2,10 +2,10 @@
 
 .autocomplete__container {
   width: 100%;
-  height: 50px;
+  height: 44px;
   display: flex;
   border-radius: 8px;
-  border: 1px solid #EDEDED;
+  background-color: #FFF;
 }
 
 .autocomplete__input {
@@ -20,12 +20,14 @@
 }
 
 .autocomplete__container:focus-within {
-  border: 1px solid #9D9D9D;
+  box-shadow: 0px 0px 0px 2px orange;
+  -webkit-box-shadow: 0px 0px 0px 2px orange;
+  -moz-box-shadow: 0px 0px 0px 2px orange;
 }
 
 .autocomplete__button {
-  width: 50px;
-  height: 48px;
+  width: 54px;
+  height: 44px;
   border-radius: 8px;
 }
 

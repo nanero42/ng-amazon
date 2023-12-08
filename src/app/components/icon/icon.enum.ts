@@ -7,4 +7,5 @@ export enum Icon {
   mapPoint = 'mapPoint',
   global = 'global',
   burger = 'burger',
+  arrowUp = 'arrowUp',
 }

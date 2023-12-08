@@ -11,9 +11,19 @@ import { Icon } from './icon.enum';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class IconComponent {
+  private _color = '#000';
+
   readonly Icon = Icon;
 
   @Input() name!: Icon;
   @Input() width = '24px';
   @Input() height = '24px';
+  @Input()
+  set color(color: string) {
+    if (color) this._color = color;
+  }
+  get color() {
+    return this._color;
+  }
+  @Input() transform = '';
 }
