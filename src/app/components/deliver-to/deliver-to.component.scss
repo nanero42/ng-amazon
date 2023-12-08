@@ -1,0 +1,22 @@
+:host { display: contents; }
+
+.deliver-to {
+  background-color: var(--secondary);
+}
+
+.deliver-to__container {
+  height: 44px;
+  padding-top: 12px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.deliver-to__destination {
+  color: #FFF;
+  padding-right: 10px;
+  line-height: 20px;
+  font-size: 13px;
+}

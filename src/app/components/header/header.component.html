@@ -1,3 +1,37 @@
 <header class="header">
-  <app-autocomplete />
+  <div class="header__container">
+
+    <div class="header__buttons pr-10">
+      <div class="header__buttons-left-side">
+        <button class="header__button">
+          <app-icon #icon [name]="icon.Icon.burger" color="#FFF" />
+        </button>
+
+        <button class="header__button">
+          <app-icon #icon [name]="icon.Icon.logo" color="#FFF" width="80px" />
+        </button>
+      </div>
+
+      <div class="header__buttons-right-side">
+        <button class="header__button">
+          <span class="header__button-label">Sign in</span>
+          <app-icon #icon [name]="icon.Icon.arrowUp" color="#FFF" width="12px" height="12px" transform="rotate(90deg)" />
+          <app-icon #icon [name]="icon.Icon.person" color="#FFF" />
+        </button>
+
+        <button class="header__button">
+          <app-icon #icon [name]="icon.Icon.cart" color="#FFF" />
+        </button>
+      </div>
+    </div>
+
+    <div class="pr-10 pl-10">
+      <app-autocomplete />
+    </div>
+
+    <app-navigation />
+
+    <app-deliver-to />
+
+  </div>
 </header>

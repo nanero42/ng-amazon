@@ -1,0 +1,16 @@
+<div class="deliver-to">
+  <div class="deliver-to__container">
+    <span class="pr-10">
+      <app-icon #icon [name]="icon.Icon.mapPoint" color="#FFF" height="100%" />
+    </span>
+    <span class="deliver-to__destination">Deliver to {{ destination }}</span>
+    <app-icon
+      #icon
+      [name]="icon.Icon.arrowUp"
+      color="#FFF"
+      transform="rotate(180deg)"
+      width="12px"
+      height="12px"
+    />
+  </div>
+</div>
