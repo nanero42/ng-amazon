@@ -1,1 +1,10 @@
-<p>card-list works!</p>
+<div class="card-list">
+  <div class="card-list__list" *ngFor="let item of items">
+    <div class="card-list__item">
+      <h4 class="card-list__title truncate_lines_2">{{ item.title }}</h4>
+      <div class="card-list__image-container">
+        <img [attr.src]="item.image" alt="Product">
+      </div>
+    </div>
+  </div>
+</div>

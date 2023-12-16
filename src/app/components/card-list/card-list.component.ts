@@ -1,5 +1,11 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+export interface CardListItem {
+  id: string;
+  title: string;
+  image: string;
+}
 
 @Component({
   selector: 'app-card-list',
@@ -10,5 +16,5 @@ import { CommonModule } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardListComponent {
-
+  @Input() items: CardListItem[] = [];
 }
