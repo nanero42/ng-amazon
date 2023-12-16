@@ -9,7 +9,7 @@ export interface Card {
   image: string;
   price_int: string;
   price_cent: string;
-  price_sale: string;
+  price_sale?: string;
   currency_code: string;
   currency_sign: string;
 }
