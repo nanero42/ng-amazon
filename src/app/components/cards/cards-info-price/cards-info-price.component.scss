@@ -4,6 +4,10 @@
   font-size: 12px;
 }
 
+.cards-info-price__cent {
+  padding-right: 6px;
+}
+
 .cards-info-price__int {
   position: relative;
   top: -2px;
@@ -15,4 +19,9 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+}
+
+.cards-info-price__sale {
+  color: #7E7E7E;
+  text-decoration: line-through;
 }
