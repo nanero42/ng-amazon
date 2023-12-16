@@ -2,6 +2,9 @@
 
 .cards {
   background-color: #FFF;
+}
+
+.cards__list {
   display: flex;
   overflow-x: scroll;
 }
@@ -12,8 +15,13 @@
   margin: 6px;
   border: 1px solid #EEE;
   border-radius: 6px;
+  flex: 0 0 auto;
 }
 
 .cards__image-container {
   height: 150px;
+}
+
+.cards__title {
+  font-size: 22px;
 }
