@@ -12,10 +12,13 @@
 .cards__item {
   overflow: hidden;
   width: 135px;
-  margin: 6px;
   border: 1px solid #EEE;
   border-radius: 6px;
   flex: 0 0 auto;
+}
+
+.cards__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .cards__image-container {
@@ -23,5 +26,7 @@
 }
 
 .cards__title {
+  padding-top: 10px;
+  padding-bottom: 8px;
   font-size: 22px;
 }

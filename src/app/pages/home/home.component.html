@@ -1,5 +1,9 @@
 <div class="home">
   <app-header />
   <app-slider />
-  <app-cards title="asd" [items]="cards" />
+  <app-cards
+    [items]="cards"
+    [showPrice]="false"
+    [listStyle]="{'padding': '6px'}"
+  />
 </div>

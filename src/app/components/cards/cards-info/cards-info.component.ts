@@ -16,4 +16,5 @@ import { CardsInfoPriceComponent } from '../cards-info-price';
 })
 export class CardsInfoComponent {
   @Input() item!: Card;
+  @Input() showPrice = true;
 }
