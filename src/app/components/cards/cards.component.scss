@@ -12,6 +12,7 @@
   padding-bottom: 10px;
   display: grid;
   overflow-x: scroll;
+  grid-template-columns: repeat(13, 135px);
 }
 
 .cards__title {
