@@ -3,3 +3,4 @@ export * from './icon';
 export * from './autocomplete';
 export * from './navigation';
 export * from './slider';
+export * from './card-list';

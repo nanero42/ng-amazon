@@ -1,4 +1,5 @@
 - slider:
+ -- extract slides array from slider component to home-page
  -- now slider works only for desktop (mouse event), add support for mobile (touch event)
  -- add ability to slide back from the first slide and return to the last one slide and vice versa.
 - add truncate to deliver-to
@@ -9,3 +10,4 @@
 - add button component
 - add cursor pointer to button component
 - make css-variables avaliable in both js and scss
+- toggle dark / light / any_other_color theme
