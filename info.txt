@@ -2,3 +2,4 @@
 - skills of this project:
  -- reverse engineering
  -- standalone components
+ -- smart / dump components
