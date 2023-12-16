@@ -1,6 +1,7 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnDestroy, OnInit, Renderer2, ViewChild, inject } from '@angular/core';
 import { BehaviorSubject, Subscription, fromEvent, tap } from 'rxjs';
+import { SubscriptionService } from 'src/app/providers';
 
 interface Slide {
   id: string;
@@ -18,8 +19,8 @@ interface Slide {
 export class SliderComponent implements OnInit, AfterViewInit, OnDestroy {
   private readonly document: Document = inject(DOCUMENT);
   private readonly r2 = inject(Renderer2);
+  private readonly subscription = inject(SubscriptionService);
 
-  private sub: {[key: string]: Subscription} = {};
   private isMousedown$ = new BehaviorSubject(false);
 
   private startX = 0;
@@ -66,16 +67,7 @@ export class SliderComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.unsubscribeAll();
-  }
-
-  private addSub(name: string, s: Subscription) {
-    this.sub[name] = s;
-  }
-
-  private removeSub(name: string) {
-    this.sub[name]?.unsubscribe();
-    delete this.sub[name];
+    this.subscription.unsubscribeAll();
   }
 
   private mousedown() {
@@ -87,7 +79,7 @@ export class SliderComponent implements OnInit, AfterViewInit, OnDestroy {
       }),
     ).subscribe();
 
-    this.addSub('mousedown', mousedown);
+    this.subscription.addSub('mousedown', mousedown);
   }
 
   private mousemove() {
@@ -104,13 +96,13 @@ export class SliderComponent implements OnInit, AfterViewInit, OnDestroy {
       })
     ).subscribe();
 
-    this.addSub('mousemove', mousemove);
+    this.subscription.addSub('mousemove', mousemove);
   }
 
   private mouseup() {
     const mouseup = fromEvent<MouseEvent>(this.document, 'mouseup').pipe(
       tap((e) => {
-        this.removeSub('mousemove');
+        this.subscription.removeSub('mousemove');
 
         if (this.sholudSlide()) {
           this.shouldSlideForward() ? this.slide(1) : this.slide(-1);
@@ -120,7 +112,7 @@ export class SliderComponent implements OnInit, AfterViewInit, OnDestroy {
       }),
     ).subscribe();
 
-    this.addSub('mouseup', mouseup);
+    this.subscription.addSub('mouseup', mouseup);
   }
 
   private slide(slideIndex: number) {
@@ -138,13 +130,6 @@ export class SliderComponent implements OnInit, AfterViewInit, OnDestroy {
 
   private sholudSlide(): boolean {
     return this.movedX > 100;
-  }
-
-  private unsubscribeAll(): void {
-    for (const s in this.sub) {
-      this.sub[s]?.unsubscribe();
-      delete this.sub[s];
-    }
   }
 
   private setCamera() {
@@ -167,7 +152,7 @@ export class SliderComponent implements OnInit, AfterViewInit, OnDestroy {
       }),
     ).subscribe();
 
-    this.addSub('mouseleave', mouseleave);
+    this.subscription.addSub('mouseleave', mouseleave);
   }
 
   // private contextmenu() {
