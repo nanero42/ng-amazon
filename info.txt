@@ -1,3 +1,4 @@
 - this project is clone for www.amazon.com.
 - skills of this project:
  -- reverse engineering
+ -- standalone components
