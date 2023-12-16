@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CardListComponent, CardListItem, HeaderComponent, SliderComponent } from 'src/app/components';
+import { Card, CardsComponent, HeaderComponent, SliderComponent } from 'src/app/components';
 
 @Component({
   selector: 'app-home',
@@ -9,14 +9,14 @@ import { CardListComponent, CardListItem, HeaderComponent, SliderComponent } fro
     CommonModule,
     HeaderComponent,
     SliderComponent,
-    CardListComponent,
+    CardsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent {
-  cardListItems: CardListItem[] = [
+  cards: Card[] = [
     {
       id: '24g35h35',
       title: 'Small gifts under $20',

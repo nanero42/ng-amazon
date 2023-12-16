@@ -1,11 +1,11 @@
 :host { display: contents; }
 
-.card-list {
+.cards {
   display: flex;
   overflow-x: scroll;
 }
 
-.card-list__item {
+.cards__item {
   overflow: hidden;
   width: 135px;
   margin: 6px;
@@ -13,13 +13,13 @@
   border-radius: 6px;
 }
 
-.card-list__title {
+.cards__title {
   padding-top: 4px;
   padding-left: 4px;
   padding-right: 4px;
   height: 42px;
 }
 
-.card-list__image-container {
+.cards__image-container {
   height: 150px;
 }
