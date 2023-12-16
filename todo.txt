@@ -10,3 +10,4 @@
 - add button component
 - add cursor pointer to button component
 - make css-variables avaliable in both js and scss
+- toggle dark / light / any_other_color theme
