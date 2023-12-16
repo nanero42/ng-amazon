@@ -5,22 +5,13 @@
       class="cards__list"
       [ngStyle]="{'grid-template-columns': 'repeat(' + items.length + ', 135px)'}"
     >
-      <li class="cards__item" *ngFor="let item of items">
-        <app-cards-info
-          *ngIf="!cardsInfoOnBottom"
-          [item]="item"
-          [showPrice]="showPrice"
-        />
-        <app-cards-image
-          [item]="item"
-          [imageFullHeight]="imageFullHeight"
-        />
-        <app-cards-info
-          *ngIf="cardsInfoOnBottom"
-          [item]="item"
-          [showPrice]="showPrice"
-        />
-      </li>
+      <app-card
+        *ngFor="let item of items"
+        [item]="item"
+        [cardsInfoOnBottom]="cardsInfoOnBottom"
+        [showPrice]="showPrice"
+        [imageFullHeight]="imageFullHeight"
+      />
     </ul>
   </div>
 </div>

@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CardsInfoComponent } from './cards-info';
 import { CardsImageComponent } from './cards-image';
+import { CardComponent } from './card';
 
 export interface Card {
   id: string;
@@ -21,6 +22,7 @@ export interface Card {
     CommonModule,
     CardsInfoComponent,
     CardsImageComponent,
+    CardComponent,
   ],
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.scss'],
