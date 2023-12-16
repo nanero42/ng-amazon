@@ -1,7 +1,7 @@
 <div class="cards">
   <div class="cards__list" *ngFor="let item of items">
     <div class="cards__item">
-      <h4 class="cards__title truncate_lines_2">{{ item.title }}</h4>
+      <app-cards-info [item]="item" />
       <div class="cards__image-container">
         <img [attr.src]="item.image" alt="Product">
       </div>

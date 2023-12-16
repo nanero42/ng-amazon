@@ -1,0 +1,18 @@
+:host { display: contents; }
+
+.cards-info-price__decor {
+  font-size: 12px;
+}
+
+.cards-info-price__int {
+  position: relative;
+  top: -2px;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.cards-info-price {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
