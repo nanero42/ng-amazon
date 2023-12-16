@@ -1,3 +1,6 @@
+- slider:
+ -- now slider works only for desktop (mouse event), add support for mobile (touch event)
+ -- add ability to slide back from the first slide and return to the last one slide and vice versa.
 - add truncate to deliver-to
 - finish autocomplete
 - add fonts
