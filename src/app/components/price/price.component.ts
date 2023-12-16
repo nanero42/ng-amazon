@@ -1,15 +1,15 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Card } from '../cards.component';
+import { Card } from '../cards/cards.component';
 
 @Component({
-  selector: 'app-cards-info-price',
+  selector: 'app-price',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './cards-info-price.component.html',
-  styleUrls: ['./cards-info-price.component.scss'],
+  templateUrl: './price.component.html',
+  styleUrls: ['./price.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardsInfoPriceComponent {
+export class PriceComponent {
   @Input() item!: Card;
 }

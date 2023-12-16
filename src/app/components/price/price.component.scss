@@ -1,27 +1,27 @@
 :host { display: contents; }
 
-.cards-info-price__decor {
+.price__decor {
   font-size: 12px;
 }
 
-.cards-info-price__cent {
+.price__cent {
   padding-right: 6px;
 }
 
-.cards-info-price__int {
+.price__int {
   position: relative;
   top: -2px;
   font-weight: 400;
   font-size: 22px;
 }
 
-.cards-info-price {
+.price {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-.cards-info-price__sale {
+.price__sale {
   color: #7E7E7E;
   text-decoration: line-through;
 }
