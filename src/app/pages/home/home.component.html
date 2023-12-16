@@ -4,6 +4,11 @@
   <app-cards
     [items]="cards"
     [showPrice]="false"
-    [listStyle]="{'padding': '6px'}"
+  />
+  <app-cards
+    title="Related to items you've viewed in Books"
+    [items]="cards"
+    [showPrice]="true"
+    [cardsInfoOnBottom]="true"
   />
 </div>

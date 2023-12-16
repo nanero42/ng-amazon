@@ -1,12 +1,21 @@
 <div class="cards">
   <div class="cards__container">
-    <h3 *ngIf="title" class="cards__title">{{ title }}</h3>
-    <ul class="cards__list" [ngStyle]="listStyle">
+    <h3 *ngIf="title" class="cards__title truncate">{{ title }}</h3>
+    <ul class="cards__list">
       <li class="cards__item" *ngFor="let item of items">
-        <app-cards-info [item]="item" [showPrice]="showPrice" />
+        <app-cards-info
+          *ngIf="!cardsInfoOnBottom"
+          [item]="item"
+          [showPrice]="showPrice"
+        />
         <div class="cards__image-container">
           <img [attr.src]="item.image" alt="Product">
         </div>
+        <app-cards-info
+          *ngIf="cardsInfoOnBottom"
+          [item]="item"
+          [showPrice]="showPrice"
+        />
       </li>
     </ul>
   </div>

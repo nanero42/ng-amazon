@@ -1,7 +1,12 @@
-.truncate_lines_2, .truncate_lines_3 {
+.truncate, .truncate_lines_2, .truncate_lines_3 {
   display: -webkit-box !important;
   -webkit-box-orient: vertical;
   white-space: normal;
+  overflow: hidden;
+}
+
+.truncate {
+  -webkit-line-clamp: 1;
 }
 
 .truncate_lines_2 {

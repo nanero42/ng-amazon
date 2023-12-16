@@ -27,5 +27,6 @@ export class CardsComponent {
   @Input() items: Card[] = [];
   @Input() title = '';
   @Input() showPrice = true;
-  @Input() listStyle: {[key: string]: string} | null = null;
+  @Input() cardsInfoOnBottom = false;
+  @Input() imageFullHeight = false;
 }
