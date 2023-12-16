@@ -8,9 +8,10 @@
           [item]="item"
           [showPrice]="showPrice"
         />
-        <div class="cards__image-container">
-          <img [attr.src]="item.image" alt="Product">
-        </div>
+        <app-cards-image
+          [item]="item"
+          [imageFullHeight]="imageFullHeight"
+        />
         <app-cards-info
           *ngIf="cardsInfoOnBottom"
           [item]="item"

@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CardsInfoComponent } from './cards-info';
+import { CardsImageComponent } from './cards-image';
 
 export interface Card {
   id: string;
@@ -18,6 +19,7 @@ export interface Card {
   imports: [
     CommonModule,
     CardsInfoComponent,
+    CardsImageComponent,
   ],
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.scss'],
