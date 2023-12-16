@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from 'src/app/components';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { HeaderComponent, SliderComponent } from 'src/app/components';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +8,11 @@ import { HeaderComponent } from 'src/app/components';
   imports: [
     CommonModule,
     HeaderComponent,
+    SliderComponent,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent {
-
 }
