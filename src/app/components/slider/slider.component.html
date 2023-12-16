@@ -1,0 +1,11 @@
+<div class="slider">
+  <div #camera class="slider__camera">
+    <img
+      *ngFor="let slide of slides"
+      class="slider__image"
+      draggable="false"
+      [attr.src]="slide.src"
+      alt="Image"
+    />
+  </div>
+</div>

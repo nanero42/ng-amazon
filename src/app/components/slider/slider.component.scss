@@ -1,0 +1,16 @@
+:host { display: contents; }
+
+.slider {
+  overflow: hidden;
+}
+
+.slider__camera {
+  display: flex;
+  height: 300px;
+  transform: translateX(0);
+  transition: transform 0.15s ease-out;
+}
+
+.slider__image {
+  flex: 0 0 auto;
+}
