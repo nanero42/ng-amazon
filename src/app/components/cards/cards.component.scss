@@ -10,13 +10,12 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-  display: flex;
+  display: grid;
   overflow-x: scroll;
 }
 
 .cards__item {
   overflow: hidden;
-  width: 135px;
   border: 1px solid #EEE;
   border-radius: 6px;
   flex: 0 0 auto;

@@ -1,7 +1,10 @@
 <div class="cards">
   <div class="cards__container">
     <h3 *ngIf="title" class="cards__title truncate">{{ title }}</h3>
-    <ul class="cards__list">
+    <ul
+      class="cards__list"
+      [ngStyle]="{'grid-template-columns': 'repeat(' + items.length + ', 135px)'}"
+    >
       <li class="cards__item" *ngFor="let item of items">
         <app-cards-info
           *ngIf="!cardsInfoOnBottom"
