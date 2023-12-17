@@ -4,7 +4,7 @@
   <span class="price__decor price__cent">{{ item.price_cent }}</span>
   <span
     *ngIf="item.price_crossed && item.currency_sign"
-    class="price__sale"
+    class="price__crossed"
   >
     {{ item.currency_sign + item.price_crossed }}
   </span>
