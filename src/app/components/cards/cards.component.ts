@@ -16,6 +16,13 @@ export interface Card {
   viewed_count?: number;
 }
 
+export enum CardsInfoPlacement {
+  top = 'top',
+  right = 'right',
+  bottom = 'bottom',
+  left = 'left',
+}
+
 @Component({
   selector: 'app-cards',
   standalone: true,
@@ -35,6 +42,7 @@ export class CardsComponent {
   @Input() linkText = '';
   @Input() showPrice = true;
   @Input() cardsInfoOnBottom = false;
+  @Input() cardsInfoPlacement: keyof typeof CardsInfoPlacement = CardsInfoPlacement.top;
   @Input() imageFullHeight = false;
   @Input() itemsInRow = 13;
   @Input() itemsWidth = '135px';
