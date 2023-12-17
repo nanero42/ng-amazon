@@ -136,4 +136,44 @@ export class HomeComponent {
       currency_sign: '$',
     },
   ]
+
+  cards2: Card[] = [
+    {
+      id: 'ergh674tgsdg',
+      title: 'Web Scalability for Startup Engineers',
+      image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      price_int: '39',
+      price_cent: '78',
+      price_sale: '55.00',
+      currency_code: 'USD',
+      currency_sign: '$',
+    },
+    {
+      id: 'hm7u54rfsdvfu6',
+      title: 'Reconfigurable Transceiver Architectural insights ect ect',
+      image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      price_int: '109',
+      price_cent: '99',
+      currency_code: 'USD',
+      currency_sign: '$',
+    },
+    {
+      id: 'erth6uk54twdf',
+      title: 'ASP.NET Core 6 and Angular: Full-stack web development',
+      image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      price_int: '54',
+      price_cent: '99',
+      currency_code: 'USD',
+      currency_sign: '$',
+    },
+    {
+      id: 'fgh6uk66sdcbh',
+      title: 'Angular for Enterprise Applications: Build scalable systems etc ect',
+      image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      price_int: '39',
+      price_cent: '99',
+      currency_code: 'USD',
+      currency_sign: '$',
+    },
+  ]
 }
