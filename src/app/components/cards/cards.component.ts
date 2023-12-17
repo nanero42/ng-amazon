@@ -34,4 +34,6 @@ export class CardsComponent {
   @Input() showPrice = true;
   @Input() cardsInfoOnBottom = false;
   @Input() imageFullHeight = false;
+  @Input() itemsInRow = 13;
+  @Input() itemsWidth = '135px';
 }
