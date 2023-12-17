@@ -22,4 +22,5 @@ export class CardComponent {
   @Input() showPrice!: boolean;
   @Input() imageFullHeight!: boolean;
   @Input() border!: string;
+  @Input() showviewedCount!: boolean;
 }

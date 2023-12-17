@@ -3,4 +3,5 @@
   <div class="cards-info__price-container">
     <app-price *ngIf="showPrice" [item]="item" />
   </div>
+  <span *ngIf="showviewedCount" class="cards-info__viewed-count">{{ item.viewed_count }} viewed</span>
 </div>

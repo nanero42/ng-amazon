@@ -9,11 +9,21 @@
   <app-cards
     title="Related to items you've viewed in Books"
     [items]="cards2"
-    [showPrice]="true"
     [cardsInfoOnBottom]="true"
     [imageFullHeight]="true"
     [itemsInRow]="2"
     itemsWidth="1fr"
     linkText="Explore more"
+  />
+  <app-cards
+    title="Keep shopping for"
+    [items]="keepShoppingCards"
+    [showPrice]="false"
+    [showviewedCount]="true"
+    [cardsInfoOnBottom]="true"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+    linkText="View your browsing history"
   />
 </div>

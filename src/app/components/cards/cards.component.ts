@@ -8,11 +8,12 @@ export interface Card {
   id: string;
   title: string;
   image: string;
-  price_int: string;
-  price_cent: string;
+  price_int?: string;
+  price_cent?: string;
   price_crossed?: string;
-  currency_code: string;
-  currency_sign: string;
+  currency_code?: string;
+  currency_sign?: string;
+  viewed_count?: number;
 }
 
 @Component({
@@ -38,4 +39,5 @@ export class CardsComponent {
   @Input() itemsInRow = 13;
   @Input() itemsWidth = '135px';
   @Input() cardBorder: string = 'none';
+  @Input() showviewedCount = false;
 }

@@ -176,4 +176,19 @@ export class HomeComponent {
       currency_sign: '$',
     },
   ]
+
+  keepShoppingCards: Card[] = [
+    {
+      id: 'rtgh5yj4ge',
+      title: 'Desktop computers',
+      image: 'https://i.pinimg.com/736x/a1/a0/37/a1a0374c887e43b64e5731e6757c7bf3.jpg',
+      viewed_count: 1,
+    },
+    {
+      id: 'fghj7iktg',
+      title: 'Books',
+      image: 'https://st2.depositphotos.com/2769299/7314/i/450/depositphotos_73146775-stock-photo-a-stack-of-books-on.jpg',
+      viewed_count: 10,
+    },
+  ]
 }

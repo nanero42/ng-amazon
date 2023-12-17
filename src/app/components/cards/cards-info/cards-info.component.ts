@@ -16,5 +16,6 @@ import { PriceComponent } from '../../price';
 })
 export class CardsInfoComponent {
   @Input() item!: Card;
-  @Input() showPrice = true;
+  @Input() showPrice!: boolean;
+  @Input() showviewedCount!: boolean;
 }
