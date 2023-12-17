@@ -8,9 +8,11 @@
     titleStaticHeight="42px"
   />
   <app-cards
+    #cardsRef
     title="Related to items you've viewed in Books"
     [items]="cards2"
     [cardsInfoOnBottom]="true"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
     [itemsInRow]="2"
     itemsWidth="1fr"
@@ -22,6 +24,7 @@
     [showPrice]="false"
     [showviewedCount]="true"
     [cardsInfoOnBottom]="true"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
     [itemsInRow]="2"
     itemsWidth="1fr"
@@ -30,6 +33,7 @@
   <app-cards
     title="Related to items you've viewed"
     [items]="relatedCards"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
     [imageFullHeight]="true"
     [itemsInRow]="1"
     itemsWidth="1fr"

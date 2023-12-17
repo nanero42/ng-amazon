@@ -49,4 +49,6 @@ export class CardsComponent {
   @Input() cardBorder: string = 'none';
   @Input() showviewedCount = false;
   @Input() titleStaticHeight = '';
+
+  readonly CardsInfoPlacement = CardsInfoPlacement;
 }
