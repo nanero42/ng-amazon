@@ -18,7 +18,6 @@ import { Card } from '../cards.component';
 })
 export class CardComponent {
   @Input() item!: Card;
-  @Input() cardsInfoOnBottom!: boolean;
   @Input() showPrice!: boolean;
   @Input() imageFullHeight!: boolean;
   @Input() border!: string;

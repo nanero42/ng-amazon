@@ -41,7 +41,6 @@ export class CardsComponent {
   @Input() title = '';
   @Input() linkText = '';
   @Input() showPrice = true;
-  @Input() cardsInfoOnBottom = false;
   @Input() cardsInfoPlacement: keyof typeof CardsInfoPlacement = CardsInfoPlacement.top;
   @Input() imageFullHeight = false;
   @Input() itemsInRow = 13;
