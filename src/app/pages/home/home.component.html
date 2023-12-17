@@ -5,6 +5,7 @@
     [items]="cards"
     [showPrice]="false"
     cardBorder="1px solid #EEE"
+    titleStaticHeight="42px"
   />
   <app-cards
     title="Related to items you've viewed in Books"
@@ -25,5 +26,12 @@
     [itemsInRow]="2"
     itemsWidth="1fr"
     linkText="View your browsing history"
+  />
+  <app-cards
+    title="Related to items you've viewed"
+    [items]="relatedCards"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    itemsWidth="1fr"
   />
 </div>

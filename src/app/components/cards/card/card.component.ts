@@ -23,4 +23,5 @@ export class CardComponent {
   @Input() imageFullHeight!: boolean;
   @Input() border!: string;
   @Input() showviewedCount!: boolean;
+  @Input() titleStaticHeight!: string;
 }

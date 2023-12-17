@@ -18,4 +18,5 @@ export class CardsInfoComponent {
   @Input() item!: Card;
   @Input() showPrice!: boolean;
   @Input() showviewedCount!: boolean;
+  @Input() titleStaticHeight!: string;
 }

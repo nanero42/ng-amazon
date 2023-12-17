@@ -8,9 +8,9 @@ export interface Card {
   id: string;
   title: string;
   image: string;
-  price_int?: string;
-  price_cent?: string;
-  price_crossed?: string;
+  price_int?: number;
+  price_cent?: number;
+  price_crossed?: number;
   currency_code?: string;
   currency_sign?: string;
   viewed_count?: number;
@@ -40,4 +40,5 @@ export class CardsComponent {
   @Input() itemsWidth = '135px';
   @Input() cardBorder: string = 'none';
   @Input() showviewedCount = false;
+  @Input() titleStaticHeight = '';
 }

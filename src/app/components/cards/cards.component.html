@@ -13,8 +13,9 @@
         [imageFullHeight]="imageFullHeight"
         [border]="cardBorder"
         [showviewedCount]="showviewedCount"
+        [titleStaticHeight]="titleStaticHeight"
       />
     </ul>
-    <a href="#" class="cards__link">{{ linkText }}</a>
+    <a *ngIf="linkText" href="#" class="cards__link">{{ linkText }}</a>
   </div>
 </div>
