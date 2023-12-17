@@ -36,4 +36,5 @@ export class CardsComponent {
   @Input() imageFullHeight = false;
   @Input() itemsInRow = 13;
   @Input() itemsWidth = '135px';
+  @Input() cardBorder: string = 'none';
 }
