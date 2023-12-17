@@ -26,25 +26,27 @@ export class CardComponent {
   @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
 
   getCardsInfoPlacementStyle(): any {
-    const style = {
+    const card = {
       'display': 'flex',
       'flex-direction': 'column',
     }
 
     switch (this.cardsInfoPlacement) {
       case CardsInfoPlacement.top:
-        style['flex-direction'] = 'column-reverse';
+        card['flex-direction'] = 'column-reverse';
         break;
       case CardsInfoPlacement.right:
-        style['flex-direction'] = 'row';
+        card['flex-direction'] = 'row';
         break;
       case CardsInfoPlacement.left:
-        style['flex-direction'] = 'row-reverse';
+        card['flex-direction'] = 'row-reverse';
         break;
       default:
-        style['flex-direction'] = 'column';
+        card['flex-direction'] = 'column';
     }
 
-    return style;
+    return {
+      card,
+    }
   }
 }
