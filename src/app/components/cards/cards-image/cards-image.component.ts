@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Card } from '../cards.component';
+import { Card, CardsInfoPlacement } from '../cards.component';
 
 @Component({
   selector: 'app-cards-image',
@@ -13,6 +13,9 @@ import { Card } from '../cards.component';
 export class CardsImageComponent {
   @Input() item!: Card;
   @Input() imageFullHeight = false;
+  @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
+
+  readonly CardsInfoPlacement = CardsInfoPlacement;
 
   imageFullHeightStyle(): any {
     const imageContainer = {
@@ -24,12 +27,27 @@ export class CardsImageComponent {
 
     const image = {
       'object-fit': 'contain',
-      'width': '70%',
+      'width': '100%',
     }
 
     return {
       imageContainer,
       image,
     }
+  }
+
+  getCardsInfoPlacement(): any {
+    const cardsImage = {
+      'flex': this.isLeftOrRight() ? '30%' : '',
+      'padding-right': this.isLeftOrRight() ? '10px' : '',
+    }
+
+    return {
+      cardsImage,
+    };
+  }
+
+  private isLeftOrRight(): boolean {
+    return this.cardsInfoPlacement === CardsInfoPlacement.left || this.cardsInfoPlacement === CardsInfoPlacement.right;
   }
 }

@@ -24,4 +24,27 @@ export class CardComponent {
   @Input() showviewedCount!: boolean;
   @Input() titleStaticHeight!: string;
   @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
+
+  getCardsInfoPlacementStyle(): any {
+    const style = {
+      'display': 'flex',
+      'flex-direction': 'column',
+    }
+
+    switch (this.cardsInfoPlacement) {
+      case CardsInfoPlacement.top:
+        style['flex-direction'] = 'column-reverse';
+        break;
+      case CardsInfoPlacement.right:
+        style['flex-direction'] = 'row';
+        break;
+      case CardsInfoPlacement.left:
+        style['flex-direction'] = 'row-reverse';
+        break;
+      default:
+        style['flex-direction'] = 'column';
+    }
+
+    return style;
+  }
 }

@@ -1,13 +1,19 @@
-<li class="card" [ngStyle]="{'border': border}">
+<li
+  class="card"
+  [style.border]="border"
+  [ngStyle]="getCardsInfoPlacementStyle()"
+>
   <app-cards-image
     [item]="item"
     [imageFullHeight]="imageFullHeight"
+    [cardsInfoPlacement]="cardsInfoPlacement"
   />
   <app-cards-info
     [item]="item"
     [showPrice]="showPrice"
     [showviewedCount]="showviewedCount"
     [titleStaticHeight]="titleStaticHeight"
+    [cardsInfoPlacement]="cardsInfoPlacement"
   />
   <div style="padding-bottom: 10px;"></div>
 </li>
