@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardsInfoComponent } from '../cards-info';
 import { CardsImageComponent } from '../cards-image';
-import { Card } from '../cards.component';
+import { Card, CardsInfoPlacement } from '../cards.component';
 
 @Component({
   selector: 'app-card',
@@ -23,4 +23,5 @@ export class CardComponent {
   @Input() border!: string;
   @Input() showviewedCount!: boolean;
   @Input() titleStaticHeight!: string;
+  @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
 }
