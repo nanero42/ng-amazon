@@ -1,13 +1,13 @@
 <li class="card" [ngStyle]="{'border': border}">
+  <app-cards-image
+    [item]="item"
+    [imageFullHeight]="imageFullHeight"
+  />
   <app-cards-info
     [item]="item"
     [showPrice]="showPrice"
     [showviewedCount]="showviewedCount"
     [titleStaticHeight]="titleStaticHeight"
-  />
-  <app-cards-image
-    [item]="item"
-    [imageFullHeight]="imageFullHeight"
   />
   <div style="padding-bottom: 10px;"></div>
 </li>
