@@ -19,7 +19,7 @@ export class CardsImageComponent {
       'display': 'flex',
       'align-items': 'center',
       'justify-content': 'center',
-      'background-color': '#EEE',
+      'background-color': '#F7F8F8',
     }
 
     const image = {
