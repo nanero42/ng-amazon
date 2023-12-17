@@ -1,5 +1,18 @@
 <div class="home">
   <app-header />
   <app-slider />
-  <app-cards [items]="cards" />
+  <app-cards
+    [items]="cards"
+    [showPrice]="false"
+    cardBorder="1px solid #EEE"
+  />
+  <app-cards
+    title="Related to items you've viewed in Books"
+    [items]="cards2"
+    [showPrice]="true"
+    [cardsInfoOnBottom]="true"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+  />
 </div>

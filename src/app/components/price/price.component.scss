@@ -1,0 +1,31 @@
+:host { display: contents; }
+
+.price {
+  padding-top: 8px;
+}
+
+.price__decor {
+  font-size: 12px;
+}
+
+.price__cent {
+  padding-right: 6px;
+}
+
+.price__int {
+  position: relative;
+  top: -2px;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.price {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.price__sale {
+  color: #7E7E7E;
+  text-decoration: line-through;
+}

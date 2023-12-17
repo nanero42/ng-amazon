@@ -1,0 +1,16 @@
+<li class="card" [ngStyle]="{'border': border}">
+  <app-cards-info
+    *ngIf="!cardsInfoOnBottom"
+    [item]="item"
+    [showPrice]="showPrice"
+  />
+  <app-cards-image
+    [item]="item"
+    [imageFullHeight]="imageFullHeight"
+  />
+  <app-cards-info
+    *ngIf="cardsInfoOnBottom"
+    [item]="item"
+    [showPrice]="showPrice"
+  />
+</li>
