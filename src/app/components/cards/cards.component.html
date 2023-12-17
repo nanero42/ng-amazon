@@ -1,6 +1,6 @@
 <div class="cards">
   <div class="cards__container">
-    <h3 *ngIf="title" class="cards__title truncate">{{ title }}</h3>
+    <h3 class="cards__title truncate">{{ title }}</h3>
     <ul
       class="cards__list"
       [ngStyle]="{'grid-template-columns': 'repeat(' + itemsInRow + ', ' + itemsWidth + ')'}"
