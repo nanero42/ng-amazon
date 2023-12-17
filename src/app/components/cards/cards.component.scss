@@ -5,11 +5,14 @@
   margin-bottom: 20px;
 }
 
+.cards__container {
+  padding-bottom: 20px;
+}
+
 .cards__list {
-  padding-top: 8px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   overflow-x: scroll;
   display: grid;
   gap: 10px;
@@ -19,5 +22,12 @@
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 18px;
+}
+
+.cards__link {
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #017185;
 }

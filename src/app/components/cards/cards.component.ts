@@ -31,6 +31,7 @@ export interface Card {
 export class CardsComponent {
   @Input() items: Card[] = [];
   @Input() title = '';
+  @Input() linkText = '';
   @Input() showPrice = true;
   @Input() cardsInfoOnBottom = false;
   @Input() imageFullHeight = false;
