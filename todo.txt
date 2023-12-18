@@ -1,5 +1,8 @@
-- link component
- -- link types: text, image
+- add tslint / angular tslint?
+- add prettier
+- add husky
+- add lint for scss (forgot its name)
+
 - button component:
  -- create it
  -- add cursor pointer to button component
