@@ -1,0 +1,13 @@
+:host { display: contents; }
+
+.link {
+  display: block;
+  white-space: nowrap;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: var(--text);
+  line-height: 15px;
+  font-weight: 400;
+}
