@@ -14,6 +14,7 @@ export class CardImageComponent {
   private _imageContainerHeight = '150px';
   private _imageContainerBg = '#F7F8F8';
   private _imageObjectFit = 'contain';
+  private _imageContainerBorderRadius = '6px';
 
   @Input() item!: Card;
   @Input() imageFullHeight = false;
@@ -28,6 +29,9 @@ export class CardImageComponent {
   @Input()
   set imageObjectFit(v: string | undefined) { v ? this._imageObjectFit = v : '' }
   get imageObjectFit() { return this._imageObjectFit }
+  @Input()
+  set imageContainerBorderRadius(v: string | undefined) { v ? this._imageContainerBorderRadius = v : '' }
+  get imageContainerBorderRadius() { return this._imageContainerBorderRadius }
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
 

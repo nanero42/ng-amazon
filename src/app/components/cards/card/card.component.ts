@@ -17,6 +17,8 @@ import { Card, CardsInfoPlacement } from '../cards.component';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardComponent {
+  private _borderRadius = '0';
+
   @Input() item!: Card;
   @Input() showPrice!: boolean;
   @Input() imageFullHeight!: boolean;
@@ -28,9 +30,12 @@ export class CardComponent {
   @Input() imageContainerMarginBottom!: string;
   @Input() discount!: number | undefined;
   @Input() imageContainerHeight!: string;
-  @Input() borderRadius = '6px';
   @Input() imageObjectFit!: string;
   @Input() showMarginAfterDiscount!: boolean;
+  @Input() imageContainerBorderRadius!: string;
+  @Input()
+  set borderRadius(v: string | undefined) { v ? this._borderRadius = v : '' }
+  get borderRadius() { return this._borderRadius }
 
   getCardsInfoPlacementStyle(): any {
     const card = {
