@@ -24,6 +24,7 @@ export class CardComponent {
   @Input() showviewedCount!: boolean;
   @Input() titleStaticHeight!: string;
   @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
+  @Input() imageContainerMarginBottom!: string;
 
   getCardsInfoPlacementStyle(): any {
     const card = {

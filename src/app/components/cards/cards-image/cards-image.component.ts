@@ -14,6 +14,7 @@ export class CardsImageComponent {
   @Input() item!: Card;
   @Input() imageFullHeight = false;
   @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
+  @Input() imageContainerMarginBottom!: string;
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
 
