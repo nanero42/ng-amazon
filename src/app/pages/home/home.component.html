@@ -86,4 +86,18 @@
     imageContainerMarginBottom="2px"
     [showMarginAfterDiscount]="false"
   />
+  <app-cards
+    #cardsRef
+    title="Shoes Under $60"
+    [items]="shoes"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+    linkText="Shop all"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+    [showMarginAfterDiscount]="false"
+  />
 </div>
