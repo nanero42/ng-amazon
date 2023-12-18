@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CardsInfoComponent } from './cards-info';
-import { CardsImageComponent } from './cards-image';
+import { CardImageComponent } from './card-image';
 import { CardComponent } from './card';
 
 export interface Card {
@@ -30,7 +30,7 @@ export enum CardsInfoPlacement {
   imports: [
     CommonModule,
     CardsInfoComponent,
-    CardsImageComponent,
+    CardImageComponent,
     CardComponent,
   ],
   templateUrl: './cards.component.html',

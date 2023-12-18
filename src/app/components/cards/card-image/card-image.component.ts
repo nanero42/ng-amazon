@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 import { Card, CardsInfoPlacement } from '../cards.component';
 
 @Component({
-  selector: 'app-cards-image',
+  selector: 'app-card-image',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './cards-image.component.html',
-  styleUrls: ['./cards-image.component.scss'],
+  templateUrl: './card-image.component.html',
+  styleUrls: ['./card-image.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardsImageComponent {
+export class CardImageComponent {
   private _imageContainerHeight = '150px';
   private _imageContainerBg = '#F7F8F8';
 
