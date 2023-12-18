@@ -5,18 +5,18 @@ import { PriceComponent } from '../../price';
 import { DiscountComponent } from '../../discount/discount.component';
 
 @Component({
-  selector: 'app-cards-info',
+  selector: 'app-card-info',
   standalone: true,
   imports: [
     CommonModule,
     PriceComponent,
     DiscountComponent,
   ],
-  templateUrl: './cards-info.component.html',
-  styleUrls: ['./cards-info.component.scss'],
+  templateUrl: './card-info.component.html',
+  styleUrls: ['./card-info.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardsInfoComponent {
+export class CardInfoComponent {
   @Input() item!: Card;
   @Input() showPrice!: boolean;
   @Input() showviewedCount!: boolean;

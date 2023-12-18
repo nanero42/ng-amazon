@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardsInfoComponent } from '../cards-info';
+import { CardInfoComponent } from '../card-info';
 import { CardImageComponent } from '../card-image';
 import { Card, CardsInfoPlacement } from '../cards.component';
 
@@ -9,7 +9,7 @@ import { Card, CardsInfoPlacement } from '../cards.component';
   standalone: true,
   imports: [
     CommonModule,
-    CardsInfoComponent,
+    CardInfoComponent,
     CardImageComponent,
   ],
   templateUrl: './card.component.html',
