@@ -1,4 +1,8 @@
+<div *ngIf="imageUrl" class="link__image" >
+  <img [attr.src]="imageUrl" alt="Product" />
+</div>
 <a
+  *ngIf="text"
   class="link"
   href="#"
   [style.color]="textColor"
