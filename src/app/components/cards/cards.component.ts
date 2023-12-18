@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CardComponent } from './card';
+import { LinkComponent } from '../link';
 
 export interface Card {
   id: string;
@@ -28,6 +29,7 @@ export enum CardsInfoPlacement {
   imports: [
     CommonModule,
     CardComponent,
+    LinkComponent,
   ],
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.scss'],
@@ -51,6 +53,7 @@ export class CardsComponent {
   @Input() borderRadius!: string;
   @Input() imageObjectFit!: string;
   @Input() showMarginAfterDiscount!: boolean;
+  @Input() textColor!: string;
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
 }

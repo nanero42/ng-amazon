@@ -23,6 +23,6 @@
         [showMarginAfterDiscount]="showMarginAfterDiscount"
       />
     </ul>
-    <a *ngIf="linkText" href="#" class="cards__link">{{ linkText }}</a>
+    <app-link [text]="linkText" [textColor]="textColor" />
   </div>
 </div>
