@@ -288,4 +288,27 @@ export class HomeComponent {
       discount: 28,
     },
   ]
+
+  apparels: Card[] = [
+    {
+      id: 'weg4tu46',
+      image: 'https://images.unsplash.com/photo-1597317628840-d3472f7aa7fc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      title: 'Women',
+    },
+    {
+      id: 'weg4tu35h546',
+      image: 'https://images.unsplash.com/photo-1585232350744-974fc9804d65?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      title: 'Men',
+    },
+    {
+      id: '1weg4tu35h546',
+      image: 'https://plus.unsplash.com/premium_photo-1676717962720-d9a812c8f8c9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      title: 'Girls',
+    },
+    {
+      id: '2weg4tu35h546',
+      image: 'https://images.unsplash.com/photo-1599360889420-da1afaba9edc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      title: 'Boys',
+    },
+  ]
 }

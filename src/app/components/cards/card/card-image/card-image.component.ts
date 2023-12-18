@@ -13,6 +13,7 @@ import { Card, CardsInfoPlacement } from '../../cards.component';
 export class CardImageComponent {
   private _imageContainerHeight = '150px';
   private _imageContainerBg = '#F7F8F8';
+  private _imageObjectFit = 'contain';
 
   @Input() item!: Card;
   @Input() imageFullHeight = false;
@@ -24,6 +25,9 @@ export class CardImageComponent {
   @Input()
   set imageContainerHeight(h: string | undefined) { h ? this._imageContainerHeight = h : '' }
   get imageContainerHeight() { return this._imageContainerHeight }
+  @Input()
+  set imageObjectFit(v: string | undefined) { v ? this._imageObjectFit = v : '' }
+  get imageObjectFit() { return this._imageObjectFit }
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
 
@@ -36,7 +40,7 @@ export class CardImageComponent {
     }
 
     const image = {
-      'object-fit': 'contain',
+      'object-fit': this.imageObjectFit,
       'width': '100%',
     }
 

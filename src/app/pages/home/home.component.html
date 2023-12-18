@@ -68,4 +68,15 @@
     itemsWidth="1fr"
     linkText="See all deals"
   />
+  <app-cards
+    #cardsRef
+    title="Apparel under $25"
+    [items]="apparels"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+    linkText="Shop all"
+    imageObjectFit="cover"
+  />
 </div>
