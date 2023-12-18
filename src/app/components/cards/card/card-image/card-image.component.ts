@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Card, CardsInfoPlacement } from '../cards.component';
+import { Card, CardsInfoPlacement } from '../../cards.component';
 
 @Component({
   selector: 'app-card-image',

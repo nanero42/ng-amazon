@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Card, CardsInfoPlacement } from '../cards.component';
-import { PriceComponent } from '../../price';
-import { DiscountComponent } from '../../discount/discount.component';
+import { Card, CardsInfoPlacement } from '../../cards.component';
+import { PriceComponent } from '../../../price';
+import { DiscountComponent } from '../../../discount/discount.component';
 
 @Component({
   selector: 'app-card-info',
