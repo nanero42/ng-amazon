@@ -11,10 +11,19 @@ import { Card, CardsInfoPlacement } from '../cards.component';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardsImageComponent {
+  private _imageContainerHeight = '150px';
+  private _imageContainerBg = '#F7F8F8';
+
   @Input() item!: Card;
   @Input() imageFullHeight = false;
   @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
   @Input() imageContainerMarginBottom!: string;
+  @Input()
+  set imageContainerBg(bg: string | undefined) { bg ? this._imageContainerBg = bg : '' }
+  get imageContainerBg() { return this._imageContainerBg }
+  @Input()
+  set imageContainerHeight(h: string | undefined) { h ? this._imageContainerHeight = h : '' }
+  get imageContainerHeight() { return this._imageContainerHeight }
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
 
@@ -23,7 +32,7 @@ export class CardsImageComponent {
       'display': 'flex',
       'align-items': 'center',
       'justify-content': 'center',
-      'background-color': '#F7F8F8',
+      'background-color': this.imageContainerBg,
     }
 
     const image = {

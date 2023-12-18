@@ -14,6 +14,7 @@ export interface Card {
   currency_code?: string;
   currency_sign?: string;
   viewed_count?: number;
+  discount?: number;
 }
 
 export enum CardsInfoPlacement {
@@ -49,6 +50,9 @@ export class CardsComponent {
   @Input() showviewedCount = false;
   @Input() titleStaticHeight = '';
   @Input() imageContainerMarginBottom = '10px';
+  @Input() imageContainerBg!: string;
+  @Input() imageContainerHeight!: string;
+  @Input() borderRadius!: string;
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
 }

@@ -1,6 +1,7 @@
 <div class="cards__image" [ngStyle]="getCardsInfoPlacement()?.cardsImage">
   <div
     class="cards__image-container"
+    [style.height]="imageContainerHeight"
     [style.margin-bottom]="imageContainerMarginBottom"
     [ngStyle]="imageFullHeight ? imageFullHeightStyle().imageContainer : ''"
   >

@@ -1,0 +1,18 @@
+:host { display: contents; }
+
+.discount__container {
+  display: flex;
+  align-items: center;
+}
+
+.discount__percentage {
+  display: inline;
+  width: fit-content;
+  background-color: #CC0C39;
+  border-radius: 2px;
+  line-height: 12px;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #FFF;
+  margin-right: 6px;
+}

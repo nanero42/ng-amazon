@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Card, CardsComponent, HeaderComponent, SliderComponent } from 'src/app/components';
+import { CardComponent } from 'src/app/components/cards/card';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,7 @@ import { Card, CardsComponent, HeaderComponent, SliderComponent } from 'src/app/
     HeaderComponent,
     SliderComponent,
     CardsComponent,
+    CardComponent,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
@@ -221,4 +223,13 @@ export class HomeComponent {
       price_crossed: 135.00,
     },
   ]
+
+  shopDealsItem: Card[] = [
+    {
+      id: 'sf3rh4h4',
+      image: 'https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      title: 'Save on Batteries from Energizer & Rayovac',
+      discount: 41,
+    },
+  ];
 }

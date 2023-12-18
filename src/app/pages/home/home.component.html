@@ -6,7 +6,7 @@
     [showPrice]="false"
     cardBorder="1px solid #EEE"
     titleStaticHeight="42px"
-    [imageContainerMarginBottom]="''"
+    imageContainerMarginBottom=""
   />
   <app-cards
     #cardsRef
@@ -36,5 +36,17 @@
     [imageFullHeight]="true"
     [itemsInRow]="1"
     itemsWidth="1fr"
+  />
+  <app-cards
+    title="Shop deals"
+    [items]="shopDealsItem"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    itemsWidth="1fr"
+    imageContainerBg="#FFF"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    imageContainerHeight="300px"
+    borderRadius=""
+    linkText="See all deals"
   />
 </div>

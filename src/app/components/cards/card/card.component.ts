@@ -20,11 +20,15 @@ export class CardComponent {
   @Input() item!: Card;
   @Input() showPrice!: boolean;
   @Input() imageFullHeight!: boolean;
+  @Input() imageContainerBg!: string;
   @Input() border!: string;
   @Input() showviewedCount!: boolean;
   @Input() titleStaticHeight!: string;
   @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
   @Input() imageContainerMarginBottom!: string;
+  @Input() discount!: number | undefined;
+  @Input() imageContainerHeight!: string;
+  @Input() borderRadius = '6px';
 
   getCardsInfoPlacementStyle(): any {
     const card = {

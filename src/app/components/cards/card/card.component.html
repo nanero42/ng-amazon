@@ -2,12 +2,16 @@
   class="card"
   [style.border]="border"
   [ngStyle]="getCardsInfoPlacementStyle()?.card"
+  [style.border-radius]="borderRadius"
 >
   <app-cards-image
     [item]="item"
     [imageFullHeight]="imageFullHeight"
     [cardsInfoPlacement]="cardsInfoPlacement"
     [imageContainerMarginBottom]="imageContainerMarginBottom"
+    [imageContainerBg]="imageContainerBg"
+    [imageContainerHeight]="imageContainerHeight"
+    [imageContainerBg]="imageContainerBg"
   />
   <app-cards-info
     [item]="item"
@@ -15,5 +19,6 @@
     [showviewedCount]="showviewedCount"
     [titleStaticHeight]="titleStaticHeight"
     [cardsInfoPlacement]="cardsInfoPlacement"
+    [discount]="discount"
   />
 </li>
