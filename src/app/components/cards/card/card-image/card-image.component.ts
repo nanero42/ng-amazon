@@ -20,10 +20,10 @@ export class CardImageComponent {
   @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
   @Input() imageContainerMarginBottom!: string;
   @Input()
-  set imageContainerBg(bg: string | undefined) { bg ? this._imageContainerBg = bg : '' }
+  set imageContainerBg(v: string | undefined) { v ? this._imageContainerBg = v : '' }
   get imageContainerBg() { return this._imageContainerBg }
   @Input()
-  set imageContainerHeight(h: string | undefined) { h ? this._imageContainerHeight = h : '' }
+  set imageContainerHeight(v: string | undefined) { v ? this._imageContainerHeight = v : '' }
   get imageContainerHeight() { return this._imageContainerHeight }
   @Input()
   set imageObjectFit(v: string | undefined) { v ? this._imageObjectFit = v : '' }
