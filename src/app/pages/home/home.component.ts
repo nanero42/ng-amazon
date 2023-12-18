@@ -232,4 +232,37 @@ export class HomeComponent {
       discount: 41,
     },
   ];
+
+  categories: Card[] = [
+    {
+      id: 'asvrh5ik54',
+      image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      title: 'Home & Kitchen',
+    },
+    {
+      id: 'sdgdj6i64',
+      image: 'https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      title: 'Health & Household Supplies',
+    },
+    {
+      id: 'fgh4tu5u43',
+      image: 'https://images.unsplash.com/photo-1570831739435-6601aa3fa4fb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      title: 'Beauty',
+    },
+    {
+      id: 'sdfghrty3t283jf',
+      image: 'https://images.unsplash.com/photo-1545127398-14699f92334b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      title: 'Grocery & Gourmet Foods',
+    },
+    {
+      id: 'asdfgdjtui654fd',
+      image: 'https://plus.unsplash.com/premium_photo-1666264200766-2a97a298f91b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      title: 'Electronics',
+    },
+    {
+      id: 'asdfgdj5yu3rdfhn',
+      image: 'https://images.unsplash.com/photo-1513116476489-7635e79feb27?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      title: 'Industrial & Scientific',
+    },
+  ]
 }

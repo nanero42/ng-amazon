@@ -49,4 +49,13 @@
     borderRadius=""
     linkText="See all deals"
   />
+  <app-cards
+    #cardsRef
+    title="Categories for you to browse"
+    [items]="categories"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+  />
 </div>
