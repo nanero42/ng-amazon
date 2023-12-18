@@ -58,4 +58,14 @@
     [itemsInRow]="2"
     itemsWidth="1fr"
   />
+  <app-cards
+    #cardsRef
+    title="Recommended deals for you"
+    [items]="recommendedDeals"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+    linkText="See all deals"
+  />
 </div>

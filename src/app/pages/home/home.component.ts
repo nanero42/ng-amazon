@@ -265,4 +265,27 @@ export class HomeComponent {
       title: 'Industrial & Scientific',
     },
   ]
+
+  recommendedDeals: Card[] = [
+    {
+      id: '3rg45h46h4',
+      image: 'https://images.unsplash.com/photo-1620987278429-ab178d6eb547?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      discount: 31,
+    },
+    {
+      id: 'sdfgrk7o6wt',
+      image: 'https://plus.unsplash.com/premium_photo-1670537994863-5ad53a3214e0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      discount: 28,
+    },
+    {
+      id: 'adfgbfk7i98rtwef',
+      image: 'https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      discount: 19,
+    },
+    {
+      id: 'adfgbfk7i98ef',
+      image: 'https://plus.unsplash.com/premium_photo-1681139760816-d0c39952f9ac?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
+      discount: 28,
+    },
+  ]
 }

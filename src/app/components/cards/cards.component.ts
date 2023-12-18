@@ -4,7 +4,7 @@ import { CardComponent } from './card';
 
 export interface Card {
   id: string;
-  title: string;
+  title?: string;
   image: string;
   price_int?: number;
   price_cent?: number;
