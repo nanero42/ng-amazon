@@ -1,3 +1,5 @@
+- link component
+ -- link types: text, image
 - button component:
  -- create it
  -- add cursor pointer to button component
