@@ -1,6 +1,6 @@
 <div class="card-info" [ngStyle]="getCardsInfoPlacementStyle()?.cardsInfo">
   <app-discount [discount]="discount" />
-  <div style="padding-bottom: 8px;"></div>
+  <div *ngIf="showMarginAfterDiscount" style="padding-bottom: 8px;"></div>
   <h4
     class="card-info__title truncate_lines_2"
     [ngStyle]="{'height': titleStaticHeight}"

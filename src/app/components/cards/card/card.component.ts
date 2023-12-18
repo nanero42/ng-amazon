@@ -30,6 +30,7 @@ export class CardComponent {
   @Input() imageContainerHeight!: string;
   @Input() borderRadius = '6px';
   @Input() imageObjectFit!: string;
+  @Input() showMarginAfterDiscount!: boolean;
 
   getCardsInfoPlacementStyle(): any {
     const card = {

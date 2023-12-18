@@ -23,6 +23,7 @@ export class CardInfoComponent {
   @Input() titleStaticHeight!: string;
   @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
   @Input() discount!: number | undefined;
+  @Input() showMarginAfterDiscount!: boolean;
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
 
