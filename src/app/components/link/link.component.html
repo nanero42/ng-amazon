@@ -1,5 +1,7 @@
-<div *ngIf="imageUrl" class="link__image" >
-  <img [attr.src]="imageUrl" alt="Product" />
+<div *ngIf="imageUrl" class="link__image">
+  <a href="#">
+    <img [attr.src]="imageUrl" alt="Product" />
+  </a>
 </div>
 <a
   *ngIf="text"
