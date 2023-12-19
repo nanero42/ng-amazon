@@ -513,4 +513,31 @@ export class HomeComponent {
       currency_sign: '$',
     },
   ]
+  popularApparel: Card[] = [
+    {
+      id: '1dfghthk7754ertfhfg',
+      title: 'Timberland PRO Men\'s Low Impact Work Glove',
+      image: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXBwYXJlbHxlbnwwfHwwfHx8MA%3D%3D',
+      price_int: 16,
+      price_cent: 99,
+      currency_sign: '$',
+    },
+    {
+      id: '2dfghthk7754ertfhfg',
+      title: 'Nautica Men\'s Classic Fit Short Sleeve Dual Tipped Collar Polo Shirt',
+      image: 'https://images.unsplash.com/photo-1562157873-818bc0726f68?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJlbHxlbnwwfHwwfHx8MA%3D%3D',
+      price_int: 47,
+      price_cent: 30,
+      currency_sign: '$',
+    },
+    {
+      id: '3dfghthk7754ertfhfg',
+      title: 'Nautica Men\'s Classic Fit Short Sleeve Dual Tipped Collar Polo Shirt',
+      image: 'https://images.unsplash.com/photo-1555529771-835f59fc5efe?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJlbHxlbnwwfHwwfHx8MA%3D%3D',
+      price_int: 27,
+      price_cent: 22,
+      currency_sign: '$',
+      price_crossed: 42.00,
+    },
+  ]
 }
