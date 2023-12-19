@@ -336,4 +336,22 @@ export class HomeComponent {
       title: 'Boy\'s',
     },
   ]
+  popularCameraGifts: Card[] = [
+    {
+      id: '1sdfgrj6uu4twef',
+      image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FtZXJhfGVufDB8fDB8fHww',
+    },
+    {
+      id: '2sdfgrj6uu4twef',
+      image: 'https://plus.unsplash.com/premium_photo-1667538960104-25726d82a6e5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2FtZXJhfGVufDB8fDB8fHww',
+    },
+    {
+      id: '3sdfgrj6uu4twef',
+      image: 'https://images.unsplash.com/photo-1607462109225-6b64ae2dd3cb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhbWVyYXxlbnwwfHwwfHx8MA%3D%3D',
+    },
+    {
+      id: '4sdfgrj6uu4twef',
+      image: 'https://images.unsplash.com/photo-1580707221190-bd94d9087b7f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhbWVyYXxlbnwwfHwwfHx8MA%3D%3D',
+    },
+  ]
 }

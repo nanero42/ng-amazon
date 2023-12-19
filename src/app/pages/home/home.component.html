@@ -102,10 +102,20 @@
     imageContainerMarginBottom="2px"
     [showMarginAfterDiscount]="false"
   />
-  <app-link
-    [imageUrl]="'assets/images/beauty_bg.jpg'"
-  />
-  <app-link
-    [imageUrl]="'assets/images/home_furniture_bg.jpg'"
+  <app-link [imageUrl]="'assets/images/beauty_bg.jpg'" />
+  <app-link [imageUrl]="'assets/images/home_furniture_bg.jpg'" />
+  <app-cards
+    #cardsRef
+    title="Popular Gifts in Camera"
+    [items]="popularCameraGifts"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    linkText="Shop now"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
   />
 </div>
