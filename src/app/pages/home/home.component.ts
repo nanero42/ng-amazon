@@ -408,4 +408,33 @@ export class HomeComponent {
       image: 'https://plus.unsplash.com/premium_photo-1684512989514-f0e4db5cc44d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGVsZWN0cm9uaWNzfGVufDB8fDB8fHww',
     },
   ]
+  wireless: Card[] = [
+    {
+      id: '1as4thj5j67j6',
+      title: 'Fitbit Charge 6 Fitness Tracker with Google apps, Heart Rate on Exercises',
+      image: 'https://images.unsplash.com/photo-1655804484380-51f5a639f2e8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2lyZWxlc3MlMjBlYXJwaG9uZXxlbnwwfHwwfHx8MA%3D%3D',
+      price_int: 129,
+      price_cent: 95,
+      currency_sign: '$',
+      price_crossed: 159.95,
+    },
+    {
+      id: '2as4thj5j67j6',
+      title: 'SAMSUNG Galaxy SmartTag2, Bluetooth Tracker, Smart Tag GPS GPS GPS GPS GPS',
+      image: 'https://images.unsplash.com/photo-1516972238977-89271fb2bab8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdpcmVsZXNzJTIwZWFycGhvbmV8ZW58MHx8MHx8fDA%3D',
+      price_int: 21,
+      price_cent: 99,
+      currency_sign: '$',
+      price_crossed: 29.99,
+    },
+    {
+      id: '3as4thj5j67j6',
+      title: 'Apple iPhone 11, 64GB, Black - Unlocked (Renewed)',
+      image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHdpcmVsZXNzJTIwZWFycGhvbmV8ZW58MHx8MHx8fDA%3D',
+      price_int: 264,
+      price_cent: 95,
+      currency_sign: '$',
+      price_crossed: 307.95,
+    },
+  ]
 }
