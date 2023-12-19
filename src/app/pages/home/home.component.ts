@@ -390,4 +390,22 @@ export class HomeComponent {
       image: 'https://images.unsplash.com/photo-1557701197-2f99da0922dd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGVsZWN0cm9uaWNzfGVufDB8fDB8fHww',
     },
   ]
+  discountElectronics: Card[] = [
+    {
+      id: '1scvbghj67u564twefs',
+      image: 'https://images.unsplash.com/photo-1601524909162-ae8725290836?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGVsZWN0cm9uaWNzfGVufDB8fDB8fHww',
+    },
+    {
+      id: '2scvbghj67u564twefs',
+      image: 'https://images.unsplash.com/photo-1586062129117-08db958ba215?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGVsZWN0cm9uaWNzfGVufDB8fDB8fHww',
+    },
+    {
+      id: '3scvbghj67u564twefs',
+      image: 'https://plus.unsplash.com/premium_photo-1664194584496-a3bccb6c6d86?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGVsZWN0cm9uaWNzfGVufDB8fDB8fHww',
+    },
+    {
+      id: '4scvbghj67u564twefs',
+      image: 'https://plus.unsplash.com/premium_photo-1684512989514-f0e4db5cc44d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGVsZWN0cm9uaWNzfGVufDB8fDB8fHww',
+    },
+  ]
 }
