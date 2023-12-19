@@ -354,4 +354,22 @@ export class HomeComponent {
       image: 'https://images.unsplash.com/photo-1580707221190-bd94d9087b7f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhbWVyYXxlbnwwfHwwfHx8MA%3D%3D',
     },
   ]
+  tablets: Card[] = [
+    {
+      id: '1ethuk67i5gre',
+      image: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHRhYmxldHN8ZW58MHx8MHx8fDA%3D',
+    },
+    {
+      id: '2ethuk67i5gre',
+      image: 'https://images.unsplash.com/photo-1628591459313-a64214c5bfac?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHRhYmxldHN8ZW58MHx8MHx8fDA%3D',
+    },
+    {
+      id: '3ethuk67i5gre',
+      image: 'https://images.unsplash.com/photo-1604404439625-976a22785855?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHRhYmxldHN8ZW58MHx8MHx8fDA%3D',
+    },
+    {
+      id: '4ethuk67i5gre',
+      image: 'https://images.unsplash.com/photo-1426024084828-5da21e13f5dc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHRhYmxldHN8ZW58MHx8MHx8fDA%3D',
+    },
+  ]
 }
