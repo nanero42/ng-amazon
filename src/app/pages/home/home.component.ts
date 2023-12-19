@@ -449,4 +449,22 @@ export class HomeComponent {
       image: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2hvZXN8ZW58MHx8MHx8fDA%3D',
     }
   ]
+  favoriteToys: Card[] = [
+    {
+      id: '1fbtuki787u4rb',
+      image: 'https://images.unsplash.com/photo-1535572290543-960a8046f5af?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dG95c3xlbnwwfHwwfHx8MA%3D%3D',
+    },
+    {
+      id: '2fbtuki787u4rb',
+      image: 'https://images.unsplash.com/photo-1603558431750-dfa36513aee6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRveXN8ZW58MHx8MHx8fDA%3D',
+    },
+    {
+      id: '3fbtuki787u4rb',
+      image: 'https://images.unsplash.com/photo-1531512721928-a2c9d1a3fb9f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHRveXN8ZW58MHx8MHx8fDA%3D',
+    },
+    {
+      id: '4fbtuki787u4rb',
+      image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHRveXN8ZW58MHx8MHx8fDA%3D',
+    },
+  ]
 }
