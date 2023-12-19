@@ -437,4 +437,10 @@ export class HomeComponent {
       price_crossed: 307.95,
     },
   ]
+  personalCares: Card[] = [
+    {
+      id: '1asfefhryjtt',
+      image: 'https://plus.unsplash.com/premium_photo-1684407617001-6a20d1798917?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29uYWwlMjBjYXJlfGVufDB8fDB8fHww',
+    }
+  ]
 }
