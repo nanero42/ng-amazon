@@ -569,4 +569,22 @@ export class HomeComponent {
       price_crossed: 39.99,
     },
   ]
+  musthaveBabyProducts: Card[] = [
+    {
+      id: '1fghtki7655erwtfdhfg',
+      image: 'https://plus.unsplash.com/premium_photo-1676031861141-fd1b9a2b812e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmFieSUyMGNsb3RoZXN8ZW58MHx8MHx8fDA%3D',
+    },
+    {
+      id: '2fghtki7655erwtfdhfg',
+      image: 'https://images.unsplash.com/photo-1560506840-ec148e82a604?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJhYnklMjBjbG90aGVzfGVufDB8fDB8fHww',
+    },
+    {
+      id: '3fghtki7655erwtfdhfg',
+      image: 'https://images.unsplash.com/photo-1542355581-caf7454785ca?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhYnklMjBjbG90aGVzfGVufDB8fDB8fHww',
+    },
+    {
+      id: '4fghtki7655erwtfdhfg',
+      image: 'https://images.unsplash.com/photo-1607322851003-f5a88dc5b960?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGJhYnklMjBjbG90aGVzfGVufDB8fDB8fHww',
+    },
+  ]
 }
