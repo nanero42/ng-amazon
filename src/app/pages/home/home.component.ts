@@ -372,4 +372,22 @@ export class HomeComponent {
       image: 'https://images.unsplash.com/photo-1426024084828-5da21e13f5dc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHRhYmxldHN8ZW58MHx8MHx8fDA%3D',
     },
   ]
+  electronics: Card[] = [
+    {
+      id: '1sdfgrjk85rerge',
+      image: 'https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGVsZWN0cm9uaWNzfGVufDB8fDB8fHww',
+    },
+    {
+      id: '2sdfgrjk85rerge',
+      image: 'https://plus.unsplash.com/premium_photo-1673709635732-c83149ac689d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8fDA%3D',
+    },
+    {
+      id: '3sdfgrjk85rerge',
+      image: 'https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGVsZWN0cm9uaWNzfGVufDB8fDB8fHww',
+    },
+    {
+      id: '4sdfgrjk85rerge',
+      image: 'https://images.unsplash.com/photo-1557701197-2f99da0922dd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGVsZWN0cm9uaWNzfGVufDB8fDB8fHww',
+    },
+  ]
 }

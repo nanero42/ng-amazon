@@ -133,4 +133,18 @@
     imageContainerMarginBottom="2px"
   />
   <app-link [imageUrl]="'assets/images/shop_sports_outdoor_bg.jpg'" />
+  <app-cards
+    #cardsRef
+    title="Best sellers in Electronics"
+    [items]="electronics"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    linkText="Shop now"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+  />
 </div>
