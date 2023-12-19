@@ -540,4 +540,33 @@ export class HomeComponent {
       price_crossed: 42.00,
     },
   ]
+  popularPc: Card[] = [
+    {
+      id: '1dbthjk687uytgdghf',
+      title: 'Intel Core i7-12700KF Gaming Desktop Processor 12 (8P+4E) Core',
+      image: 'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFBDfGVufDB8fDB8fHww',
+      price_int: 214,
+      price_cent: 99,
+      currency_sign: '$',
+      price_crossed: 259.99,
+    },
+    {
+      id: '2dbthjk687uytgdghf',
+      title: 'Nautica Men\'s Classic Fit Short Sleeve Dual Tipped Collar Polo Shirt',
+      image: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFBDfGVufDB8fDB8fHww',
+      price_int: 139,
+      price_cent: 99,
+      currency_sign: '$',
+      price_crossed: 149.99,
+    },
+    {
+      id: '3dbthjk687uytgdghf',
+      title: 'Nautica Men\'s Classic Fit Short Sleeve Dual Tipped Collar Polo Shirt',
+      image: 'https://images.unsplash.com/photo-1585143042060-77fd3b53905a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFBDfGVufDB8fDB8fHww',
+      price_int: 19,
+      price_cent: 99,
+      currency_sign: '$',
+      price_crossed: 39.99,
+    },
+  ]
 }
