@@ -485,4 +485,32 @@ export class HomeComponent {
       image: 'https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c25lYWtlcnN8ZW58MHx8MHx8fDA%3D',
     },
   ]
+  popularBeauty: Card[] = [
+    {
+      id: '1sdfgrj6ui65teghg',
+      title: 'Eucerin Q10 Anti Wrinkle Face Cream Bundle, Day Cream and Nig…',
+      image: 'https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXR5JTIwcHJvZHVjdHN8ZW58MHx8MHx8fDA%3D',
+      price_int: 16,
+      price_cent: 90,
+      currency_sign: '$',
+      price_crossed: 23.98,
+    },
+    {
+      id: '2sdfgrj6ui65teghg',
+      title: 'PanOxyl Antimicrobial Hydrating Acne Creamy Wash, 4% Benzoyl',
+      image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhdXR5JTIwcHJvZHVjdHN8ZW58MHx8MHx8fDA%3D',
+      price_int: 9,
+      price_cent: 76,
+      currency_sign: '$',
+      price_crossed: 10.25,
+    },
+    {
+      id: '3sdfgrj6ui65teghg',
+      title: 'Burt\'s Bees Christmas Gifts, 5 Stocking Stuffers Products, Everyday',
+      image: 'https://images.unsplash.com/photo-1598528738936-c50861cc75a9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmVhdXR5JTIwcHJvZHVjdHN8ZW58MHx8MHx8fDA%3D',
+      price_int: 9,
+      price_cent: 98,
+      currency_sign: '$',
+    },
+  ]
 }
