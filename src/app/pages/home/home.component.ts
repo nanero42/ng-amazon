@@ -605,4 +605,10 @@ export class HomeComponent {
       image: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGJhYnklMjBjbG90aGVzfGVufDB8fDB8fHww',
     },
   ]
+  kitchens: Card[] = [
+    {
+      id: '1dgfhnhi6urj',
+      image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D',
+    }
+  ]
 }
