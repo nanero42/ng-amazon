@@ -292,4 +292,18 @@
     borderRadius=""
     imageObjectFit="cover"
   />
+  <app-cards
+    #cardsRef
+    title="Popular Gifts for Babies"
+    [items]="popularGifts"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="3"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    linkText="See now"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+  />
 </div>

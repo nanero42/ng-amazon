@@ -611,4 +611,42 @@ export class HomeComponent {
       image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D',
     }
   ]
+  popularGifts: Card[] = [
+    {
+      id: '1adfgdghji354rdfghju',
+      image: 'https://plus.unsplash.com/premium_photo-1661331935029-a5ed25ea608b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2lmdHN8ZW58MHx8MHx8fDA%3D',
+    },
+    {
+      id: '2adfgdghji354rdfghju',
+      image: 'https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lmdHN8ZW58MHx8MHx8fDA%3D',
+    },
+    {
+      id: '3adfgdghji354rdfghju',
+      image: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2lmdHN8ZW58MHx8MHx8fDA%3D',
+    },
+    {
+      id: '4adfgdghji354rdfghju',
+      image: 'https://plus.unsplash.com/premium_photo-1663840074745-6f2664dccfd9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lmdHN8ZW58MHx8MHx8fDA%3D',
+    },
+    {
+      id: '5adfgdghji354rdfghju',
+      image: 'https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z2lmdHN8ZW58MHx8MHx8fDA%3D',
+    },
+    {
+      id: '6adfgdghji354rdfghju',
+      image: 'https://images.unsplash.com/photo-1607469256872-48074e807b0a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdpZnRzfGVufDB8fDB8fHww',
+    },
+    {
+      id: '7adfgdghji354rdfghju',
+      image: 'https://images.unsplash.com/photo-1608755727748-dfa2e44f255b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdpZnRzfGVufDB8fDB8fHww',
+    },
+    {
+      id: '8adfgdghji354rdfghju',
+      image: 'https://plus.unsplash.com/premium_photo-1663841374379-5d84dd1f3a2e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGdpZnRzfGVufDB8fDB8fHww',
+    },
+    {
+      id: '9adfgdghji354rdfghju',
+      image: 'https://plus.unsplash.com/premium_photo-1663928245806-7ea2e0fdda8f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGdpZnRzfGVufDB8fDB8fHww',
+    },
+  ]
 }
