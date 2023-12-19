@@ -24,6 +24,7 @@ export class CardInfoComponent {
   @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
   @Input() discount!: number | undefined;
   @Input() showMarginAfterDiscount!: boolean;
+  @Input() showInfo!: boolean;
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
 

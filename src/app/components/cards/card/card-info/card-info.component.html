@@ -1,4 +1,4 @@
-<div class="card-info" [ngStyle]="getCardsInfoPlacementStyle()?.cardsInfo">
+<div *ngIf="showInfo" class="card-info" [ngStyle]="getCardsInfoPlacementStyle()?.cardsInfo">
   <app-discount [discount]="discount" />
   <div *ngIf="showMarginAfterDiscount" style="padding-bottom: 8px;"></div>
   <h4

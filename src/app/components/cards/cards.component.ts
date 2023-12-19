@@ -56,6 +56,7 @@ export class CardsComponent {
   @Input() linkTextColor!: string;
   @Input() cardBorderRadius!: string;
   @Input() imageContainerBorderRadius!: string;
+  @Input() showInfo = true;
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
 }

@@ -33,6 +33,7 @@ export class CardComponent {
   @Input() imageObjectFit!: string;
   @Input() showMarginAfterDiscount!: boolean;
   @Input() imageContainerBorderRadius!: string;
+  @Input() showInfo!: boolean;
   @Input()
   set borderRadius(v: string | undefined) { v ? this._borderRadius = v : '' }
   get borderRadius() { return this._borderRadius }
