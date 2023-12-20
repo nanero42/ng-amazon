@@ -20,6 +20,8 @@ export class CardImageComponent implements OnInit {
   private imageContainerMarginBottom$ = new BehaviorSubject<string>('');
   private imageContainerBorderRadius$ = new BehaviorSubject<string>('');
 
+  readonly CardsInfoPlacement = CardsInfoPlacement;
+
   @Input() item!: Card;
   @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
   @Input() set imageContainerMarginBottom(v: string) { this.imageContainerMarginBottom$.next(v) }
@@ -28,8 +30,6 @@ export class CardImageComponent implements OnInit {
   @Input() set imageContainerHeight(v: string) { this.imageContainerHeight$.next(v || '150px') }
   @Input() set imageObjectFit(v: string) { this.imageObjectFit$.next(v || 'contain') }
   @Input() set imageContainerBorderRadius(v: string) { this.imageContainerBorderRadius$.next(v || '6px') }
-
-  readonly CardsInfoPlacement = CardsInfoPlacement;
 
   containerS$ = new BehaviorSubject<Style>({});
   imageS$ = new BehaviorSubject<Style>({});
