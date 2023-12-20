@@ -39,9 +39,9 @@ export class CardImageComponent {
   readonly CardsInfoPlacement = CardsInfoPlacement;
 
   // Inputs:
-  // imageFullHeight    -> set private imageFullHeightStyle$.next(v || '150px')
-  // imageContainerBg   -> set private imageContainerBgStyle$.next(v || '#F7F8F8')
-  // imageObjectFit     -> set private imageObjectFitStyle$.next(v || 'contain')
+  // imageFullHeight    -> set private imageFullHeight$.next(v || '150px')
+  // imageContainerBg   -> set private imageContainerBg$.next(v || '#F7F8F8')
+  // imageObjectFit     -> set private imageObjectFit$.next(v || 'contain')
 
   // if chages:
   // imageFullHeight, imageContainerBg or imageObjectFit
