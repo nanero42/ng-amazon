@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnDestroy, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Card, CardsInfoPlacement } from '../../cards.component';
 import { BehaviorSubject, combineLatest, tap } from 'rxjs';
-import { Style } from 'src/app/providers';
+import { Style, SubscriptionService } from 'src/app/providers';
 
 @Component({
   selector: 'app-card-image',
@@ -12,13 +12,15 @@ import { Style } from 'src/app/providers';
   styleUrls: ['./card-image.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardImageComponent implements OnInit {
+export class CardImageComponent implements OnInit, OnDestroy {
   private imageFullHeight$ = new BehaviorSubject<boolean>(false);
   private imageContainerBg$ = new BehaviorSubject<string>('');
   private imageContainerHeight$ = new BehaviorSubject<string>('');
   private imageObjectFit$ = new BehaviorSubject<string>('');
   private imageContainerMarginBottom$ = new BehaviorSubject<string>('');
   private imageContainerBorderRadius$ = new BehaviorSubject<string>('');
+
+  private subscription = inject(SubscriptionService);
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
 
@@ -39,8 +41,12 @@ export class CardImageComponent implements OnInit {
     this.watchImageStyle();
   }
 
+  ngOnDestroy(): void {
+    this.subscription.unsubscribeAll();
+  }
+
   private watchContainerStyle(): void {
-    combineLatest([
+    const containerStyleSub = combineLatest([
       this.imageFullHeight$,
       this.imageContainerBg$,
       this.imageContainerHeight$,
@@ -69,10 +75,12 @@ export class CardImageComponent implements OnInit {
         });
       })
     ).subscribe();
+
+    this.subscription.addSub('containerStyleSub', containerStyleSub);
   }
 
   private watchImageStyle(): void {
-    combineLatest([
+    const imageStyleSub = combineLatest([
       this.imageFullHeight$,
       this.imageObjectFit$,
     ]).pipe(
@@ -87,6 +95,8 @@ export class CardImageComponent implements OnInit {
         });
       }),
     ).subscribe();
+
+    this.subscription.addSub('imageStyleSub', imageStyleSub);
   }
 
   getCardsInfoPlacement(): any {
