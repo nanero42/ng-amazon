@@ -1,15 +1,5 @@
 <div class="card__image" [ngStyle]="getCardsInfoPlacement()?.cardsImage">
-  <div
-    class="card__image-container"
-    [style.height]="imageContainerHeight"
-    [style.margin-bottom]="imageContainerMarginBottom"
-    [style.border-radius]="imageContainerBorderRadius"
-    [ngStyle]="imageFullHeight ? imageFullHeightStyle().imageContainer : ''"
-  >
-    <img
-      [attr.src]="item.image"
-      alt="Product"
-      [ngStyle]="imageFullHeight ? imageFullHeightStyle().image : ''"
-    >
+  <div class="card__image-container" [ngStyle]="containerS$ | async">
+    <img [attr.src]="item.image" alt="Product" [ngStyle]="imageS$ | async">
   </div>
 </div>

@@ -1,6 +1,8 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Card, CardsInfoPlacement } from '../../cards.component';
+import { BehaviorSubject, combineLatest, tap } from 'rxjs';
+import { Style } from 'src/app/providers';
 
 @Component({
   selector: 'app-card-image',
@@ -10,67 +12,81 @@ import { Card, CardsInfoPlacement } from '../../cards.component';
   styleUrls: ['./card-image.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardImageComponent {
-  private _imageContainerHeight = '150px';
-  private _imageContainerBg = '#F7F8F8';
-  private _imageObjectFit = 'contain';
-  private _imageContainerBorderRadius = '6px';
+export class CardImageComponent implements OnInit {
+  private imageFullHeight$ = new BehaviorSubject<boolean>(false);
+  private imageContainerBg$ = new BehaviorSubject<string>('');
+  private imageContainerHeight$ = new BehaviorSubject<string>('');
+  private imageObjectFit$ = new BehaviorSubject<string>('');
+  private imageContainerMarginBottom$ = new BehaviorSubject<string>('');
+  private imageContainerBorderRadius$ = new BehaviorSubject<string>('');
 
   @Input() item!: Card;
-  // this
-  @Input() imageFullHeight = false;
   @Input() cardsInfoPlacement!: keyof typeof CardsInfoPlacement;
-  @Input() imageContainerMarginBottom!: string;
-  @Input()
-  // this
-  set imageContainerBg(v: string | undefined) { v ? this._imageContainerBg = v : '' }
-  get imageContainerBg() { return this._imageContainerBg }
-  @Input()
-  set imageContainerHeight(v: string | undefined) { v ? this._imageContainerHeight = v : '' }
-  get imageContainerHeight() { return this._imageContainerHeight }
-  @Input()
-  // this
-  set imageObjectFit(v: string | undefined) { v ? this._imageObjectFit = v : '' }
-  get imageObjectFit() { return this._imageObjectFit }
-  @Input()
-  set imageContainerBorderRadius(v: string | undefined) { v ? this._imageContainerBorderRadius = v : '' }
-  get imageContainerBorderRadius() { return this._imageContainerBorderRadius }
+  @Input() set imageContainerMarginBottom(v: string) { this.imageContainerMarginBottom$.next(v) }
+  @Input() set imageFullHeight(v: boolean) { this.imageFullHeight$.next(v) }
+  @Input() set imageContainerBg(v: string) { this.imageContainerBg$.next(v || '#F7F8F8') }
+  @Input() set imageContainerHeight(v: string) { this.imageContainerHeight$.next(v || '150px') }
+  @Input() set imageObjectFit(v: string) { this.imageObjectFit$.next(v || 'contain') }
+  @Input() set imageContainerBorderRadius(v: string) { this.imageContainerBorderRadius$.next(v || '6px') }
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
 
-  // Inputs:
-  // imageFullHeight    -> set private imageFullHeight$.next(v || '150px')
-  // imageContainerBg   -> set private imageContainerBg$.next(v || '#F7F8F8')
-  // imageObjectFit     -> set private imageObjectFit$.next(v || 'contain')
+  containerS$ = new BehaviorSubject<Style>({});
+  imageS$ = new BehaviorSubject<Style>({});
 
-  // if chages:
-  // imageFullHeight, imageContainerBg or imageObjectFit
+  ngOnInit(): void {
+    this.watchContainerStyle();
+    this.watchImageStyle();
+  }
 
-  // then:
-  // calcCardImageContainerStyle() { cardImageContainerStyle$.next(newStyle) }
-  // calcImageStyle() { imageStyle$.next(newStyle) }
+  private watchContainerStyle(): void {
+    combineLatest([
+      this.imageFullHeight$,
+      this.imageContainerBg$,
+      this.imageContainerHeight$,
+      this.imageContainerMarginBottom$,
+      this.imageContainerBorderRadius$,
+    ]).pipe(
+      tap(([
+        imageFullHeight,
+        imageContainerBg,
+        imageContainerHeight,
+        imageContainerMarginBottom,
+        imageContainerBorderRadius,
+      ]) => {
+        const imageFullHeightStyle = {
+          'display': 'flex',
+          'align-items': 'center',
+          'justify-content': 'center',
+        }
 
-  // in template:
-  // [ngStyle]="cardImageContainerStyle$ | async"
-  // [ngStyle]="imageStyle$ | async"
+        this.containerS$.next({
+          ...(imageFullHeight && { ...imageFullHeightStyle }),
+          'background-color': imageContainerBg,
+          'height': imageContainerHeight,
+          'margin-bottom': imageContainerMarginBottom,
+          'border-radius': imageContainerBorderRadius,
+        });
+      })
+    ).subscribe();
+  }
 
-  imageFullHeightStyle(): any {
-    const imageContainer = {
-      'display': 'flex',
-      'align-items': 'center',
-      'justify-content': 'center',
-      'background-color': this.imageContainerBg,
-    }
+  private watchImageStyle(): void {
+    combineLatest([
+      this.imageFullHeight$,
+      this.imageObjectFit$,
+    ]).pipe(
+      tap(([imageFullHeight, imageObjectFit]) => {
+        const imageFullHeightStyle = {
+          'width': '100%',
+        }
 
-    const image = {
-      'object-fit': this.imageObjectFit,
-      'width': '100%',
-    }
-
-    return {
-      imageContainer,
-      image,
-    }
+        this.imageS$.next({
+          'object-fit': imageObjectFit,
+          ...(imageFullHeight && { ...imageFullHeightStyle }),
+        });
+      }),
+    ).subscribe();
   }
 
   getCardsInfoPlacement(): any {
