@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CardComponent } from './card';
 import { LinkComponent } from '../link';
+import { KeepExploringComponent } from '../keep-exploring';
 
 export interface Card {
   id: string;
@@ -30,6 +31,7 @@ export enum CardsInfoPlacement {
     CommonModule,
     CardComponent,
     LinkComponent,
+    KeepExploringComponent,
   ],
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.scss'],
@@ -57,6 +59,7 @@ export class CardsComponent {
   @Input() cardBorderRadius!: string;
   @Input() imageContainerBorderRadius!: string;
   @Input() showInfo = true;
+  @Input() showKeepExploring = false;
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
 }
