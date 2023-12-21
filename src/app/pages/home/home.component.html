@@ -339,4 +339,19 @@
     itemsWidth="1fr"
     imageContainerHeight="96px"
   />
+  <app-cards
+    #cardsRef
+    title="Explore Departments"
+    [items]="deps"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+    linkText="All Departments"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+    [showMarginAfterDiscount]="false"
+    imageContainerHeight="65px"
+  />
 </div>

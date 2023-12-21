@@ -711,4 +711,36 @@ export class HomeComponent {
       price_crossed: 21.99,
     },
   ]
+  deps: Card[] = [
+    {
+      id: '1cbngkyt54ewedfvbu',
+      image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhdXR5fGVufDB8fDB8fHww',
+      title: 'Beauty',
+    },
+    {
+      id: '2cbngkyt54ewedfvbu',
+      image: 'https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGtpdGNoZW58ZW58MHx8MHx8fDA%3D',
+      title: 'Home and Kitchen',
+    },
+    {
+      id: '3cbngkyt54ewedfvbu',
+      image: 'https://plus.unsplash.com/premium_photo-1673995611997-b1415658ccbd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3BvcnR8ZW58MHx8MHx8fDA%3D',
+      title: 'Sports and Outdoors',
+    },
+    {
+      id: '4cbngkyt54ewedfvbu',
+      image: 'https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGVsZWN0cm9uaWNzfGVufDB8fDB8fHww',
+      title: 'Electronics',
+    },
+    {
+      id: '5cbngkyt54ewedfvbu',
+      image: 'https://plus.unsplash.com/premium_photo-1676225680209-19a398a9b38a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D',
+      title: 'Outdoor Clothing',
+    },
+    {
+      id: '6cbngkyt54ewedfvbu',
+      image: 'https://plus.unsplash.com/premium_photo-1664305042447-9178fb625765?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3VwcGxpZXN8ZW58MHx8MHx8fDA%3D',
+      title: 'Pet Supplies',
+    },
+  ]
 }
