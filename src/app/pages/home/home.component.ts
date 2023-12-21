@@ -683,4 +683,32 @@ export class HomeComponent {
       image: 'https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym9va3N8ZW58MHx8MHx8fDA%3D',
     }
   ]
+  topBooksSellers: Card[] = [
+    {
+      id: '1dfbghjk6uy3tgdgf',
+      title: 'オペレーション日本　祈りのガイド (Japanese Edition)',
+      image: 'https://images.unsplash.com/photo-1550399105-c4db5fb85c18?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJvb2tzfGVufDB8fDB8fHww',
+      price_int: 7,
+      price_cent: 42,
+      currency_sign: '$',
+    },
+    {
+      id: '2dfbghjk6uy3tgdgf',
+      title: 'CeraVe Skin Renewing Night Cream | Niacinamide, Peptide Complex, analysis',
+      image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJvb2tzfGVufDB8fDB8fHww',
+      price_int: 15,
+      price_cent: 38,
+      currency_sign: '$',
+      price_crossed: 21.99,
+    },
+    {
+      id: '3dfbghjk6uy3tgdgf',
+      title: 'CeraVe Skin Renewing Night Cream | Niacinamide, Peptide Complex, analysis',
+      image: 'https://images.unsplash.com/photo-1526243741027-444d633d7365?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJvb2tzfGVufDB8fDB8fHww',
+      price_int: 15.38,
+      price_cent: 99,
+      currency_sign: '$',
+      price_crossed: 21.99,
+    },
+  ]
 }

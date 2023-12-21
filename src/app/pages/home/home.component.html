@@ -330,4 +330,13 @@
     borderRadius=""
     imageObjectFit="cover"
   />
+  <app-cards
+    title="International Top Sellers for you"
+    [items]="topBooksSellers"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    itemsWidth="1fr"
+    imageContainerHeight="96px"
+  />
 </div>
