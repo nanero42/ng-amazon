@@ -649,4 +649,32 @@ export class HomeComponent {
       image: 'https://plus.unsplash.com/premium_photo-1663928245806-7ea2e0fdda8f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGdpZnRzfGVufDB8fDB8fHww',
     },
   ]
+  topInternationalKitchens: Card[] = [
+    {
+      id: '1fbghtkli7oi65ytrfgd',
+      title: 'Secura French Press Coffee Maker, 304 Grade Stainless Steel',
+      image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D',
+      price_int: 21,
+      price_cent: 10,
+      currency_sign: '$',
+      price_crossed: 35.99,
+    },
+    {
+      id: '2fbghtkli7oi65ytrfgd',
+      title: 'LloydPans Quik-Disks, Pre Seasoned PSTK, Perforated Pizza (1, 12 inch)',
+      image: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D',
+      price_int: 13,
+      price_cent: 60,
+      currency_sign: '$',
+      price_crossed: 15.97,
+    },
+    {
+      id: '3fbghtkli7oi65ytrfgd',
+      title: 'OXO Good Grips 7-Piece Nesting Measuring Beaker Set',
+      image: 'https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D',
+      price_int: 22,
+      price_cent: 99,
+      currency_sign: '$',
+    },
+  ]
 }
