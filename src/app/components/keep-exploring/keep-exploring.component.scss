@@ -1,0 +1,21 @@
+:host { display: contents; }
+
+.keep-exploring__container {
+  padding-bottom: 6px;
+}
+
+.keep-exploring__flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keep-exploring__text {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.keep-exploring__decor {
+  border: .5px solid #3A3A3A;
+  flex: 1 0 0;
+}

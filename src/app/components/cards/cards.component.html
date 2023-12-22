@@ -1,6 +1,7 @@
 <div class="cards">
+  <app-keep-exploring *ngIf="showKeepExploring" />
   <div class="cards__container">
-    <h3 *ngIf="title" class="cards__title truncate">{{ title }}</h3>
+    <h3 class="cards__title truncate">{{ title }}</h3>
     <ul
       class="cards__list"
       [ngStyle]="{'grid-template-columns': 'repeat(' + itemsInRow + ', ' + itemsWidth + ')'}"
@@ -8,11 +9,24 @@
       <app-card
         *ngFor="let item of items"
         [item]="item"
-        [cardsInfoOnBottom]="cardsInfoOnBottom"
         [showPrice]="showPrice"
         [imageFullHeight]="imageFullHeight"
         [border]="cardBorder"
+        [showviewedCount]="showviewedCount"
+        [titleStaticHeight]="titleStaticHeight"
+        [cardsInfoPlacement]="cardsInfoPlacement"
+        [imageContainerMarginBottom]="imageContainerMarginBottom"
+        [imageContainerBg]="imageContainerBg"
+        [discount]="item.discount"
+        [imageContainerHeight]="imageContainerHeight"
+        [borderRadius]="borderRadius"
+        [imageObjectFit]="imageObjectFit"
+        [showMarginAfterDiscount]="showMarginAfterDiscount"
+        [borderRadius]="cardBorderRadius"
+        [imageContainerBorderRadius]="imageContainerBorderRadius"
+        [showInfo]="showInfo"
       />
     </ul>
+    <app-link [text]="linkText" [textColor]="linkTextColor" />
   </div>
 </div>

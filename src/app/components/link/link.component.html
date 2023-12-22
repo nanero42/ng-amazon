@@ -1,0 +1,13 @@
+<div *ngIf="imageUrl" class="link__image">
+  <a href="#">
+    <img [attr.src]="imageUrl" alt="Product" />
+  </a>
+</div>
+<a
+  *ngIf="text"
+  class="link"
+  href="#"
+  [style.color]="textColor"
+>
+  {{ text }}
+</a>

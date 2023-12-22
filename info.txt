@@ -1,5 +1,6 @@
 - this project is clone for www.amazon.com.
 - skills of this project:
- -- reverse engineering
+ -- reverse engineering (re-created mazon)
  -- standalone components
  -- smart / dump components
+ -- mobile first design

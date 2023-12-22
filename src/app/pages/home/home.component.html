@@ -5,14 +5,354 @@
     [items]="cards"
     [showPrice]="false"
     cardBorder="1px solid #EEE"
+    titleStaticHeight="42px"
+    imageContainerMarginBottom=""
+    cardBorderRadius="6px"
+    imageContainerBorderRadius="0"
+    imageObjectFit="cover"
   />
   <app-cards
+    #cardsRef
     title="Related to items you've viewed in Books"
     [items]="cards2"
-    [showPrice]="true"
-    [cardsInfoOnBottom]="true"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
     [itemsInRow]="2"
     itemsWidth="1fr"
+    linkText="Explore more"
+    linkTextColor="#017185"
+  />
+  <app-cards
+    title="Keep shopping for"
+    [items]="keepShoppingCards"
+    [showPrice]="false"
+    [showviewedCount]="true"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+    linkText="View your browsing history"
+    linkTextColor="#017185"
+  />
+  <app-cards
+    title="Related to items you've viewed"
+    [items]="relatedCards"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    itemsWidth="1fr"
+  />
+  <app-cards
+    title="Shop deals"
+    [items]="shopDealsItem"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    itemsWidth="1fr"
+    imageContainerBg="#FFF"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    imageContainerHeight="300px"
+    borderRadius=""
+    linkText="See all deals"
+    linkTextColor="#017185"
+  />
+  <app-cards
+    #cardsRef
+    title="Categories for you to browse"
+    [items]="categories"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+  />
+  <app-cards
+    #cardsRef
+    title="Recommended deals for you"
+    [items]="recommendedDeals"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+    linkText="See all deals"
+    linkTextColor="#017185"
+  />
+  <app-cards
+    #cardsRef
+    title="Apparel under $25"
+    [items]="apparels"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+    linkText="Shop all"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+    [showMarginAfterDiscount]="false"
+  />
+  <app-cards
+    #cardsRef
+    title="Shoes Under $60"
+    [items]="shoes"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+    linkText="Shop all"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+    [showMarginAfterDiscount]="false"
+  />
+  <app-link [imageUrl]="'assets/images/beauty_bg.jpg'" />
+  <app-link [imageUrl]="'assets/images/home_furniture_bg.jpg'" />
+  <app-cards
+    #cardsRef
+    title="Popular Gifts in Camera"
+    [items]="popularCameraGifts"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    linkText="Shop now"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+  />
+  <app-cards
+    #cardsRef
+    title="Tablets under $100"
+    [items]="tablets"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    linkText="Shop now"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+  />
+  <app-link [imageUrl]="'assets/images/shop_sports_outdoor_bg.jpg'" />
+  <app-cards
+    #cardsRef
+    title="Best sellers in Electronics"
+    [items]="electronics"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    linkText="Shop now"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+  />
+  <app-cards
+    #cardsRef
+    title="Discount Electronics"
+    [items]="discountElectronics"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    linkText="Shop now"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+  />
+  <app-cards
+    title="Popular products in Wireless internationally"
+    [items]="wireless"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    itemsWidth="1fr"
+    imageContainerHeight="96px"
+  />
+  <app-cards
+    title="Personal Care under $25"
+    [items]="personalCares"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    imageContainerBg="#FFF"
+    imageContainerHeight="300px"
+    borderRadius=""
+    imageObjectFit="cover"
+  />
+  <app-cards
+    title="Delas in Shoes"
+    [items]="delasInShoes"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    imageContainerBg="#FFF"
+    imageContainerHeight="300px"
+    borderRadius=""
+    imageObjectFit="cover"
+  />
+  <app-cards
+    #cardsRef
+    title="Our favorite Toys"
+    [items]="favoriteToys"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    linkText="Shop now"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+  />
+  <app-cards
+    #cardsRef
+    title="Women's fashion sneakers"
+    [items]="womenFashionSneakers"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    linkText="See more"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+  />
+  <app-cards
+    title="Popular products in Beauty internationally"
+    [items]="popularBeauty"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    itemsWidth="1fr"
+    imageContainerHeight="96px"
+  />
+  <app-cards
+    title="Popular products in Apparel internationally"
+    [items]="popularApparel"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    itemsWidth="1fr"
+    imageContainerHeight="96px"
+  />
+  <app-cards
+    title="Popular products in PC internationally"
+    [items]="popularPc"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    itemsWidth="1fr"
+    imageContainerHeight="96px"
+  />
+  <app-cards
+    #cardsRef
+    title="Must have Baby products"
+    [items]="musthaveBabyProducts"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    linkText="See more"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+  />
+  <app-cards
+    #cardsRef
+    title="Girls’ everyday essentials"
+    [items]="everydayEssentials"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    linkText="See more"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+  />
+  <app-cards
+    title="Home & Kitchen Under $30"
+    [items]="kitchens"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    imageContainerBg="#FFF"
+    imageContainerHeight="300px"
+    borderRadius=""
+    imageObjectFit="cover"
+  />
+  <app-cards
+    #cardsRef
+    title="Popular Gifts for Babies"
+    [items]="popularGifts"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="3"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    linkText="See now"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+    imageContainerHeight="100px"
+  />
+  <app-cards
+    title="International top sellers in Kitchen "
+    [items]="topInternationalKitchens"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    itemsWidth="1fr"
+    imageContainerHeight="96px"
+  />
+  <app-cards
+    title="Deals on books"
+    [items]="dealsOnBooks"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [showInfo]="false"
+    itemsWidth="1fr"
+    imageContainerBg="#FFF"
+    imageContainerHeight="300px"
+    borderRadius=""
+    imageObjectFit="cover"
+  />
+  <app-cards
+    title="International Top Sellers for you"
+    [items]="topBooksSellers"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
+    [imageFullHeight]="true"
+    [itemsInRow]="1"
+    itemsWidth="1fr"
+    imageContainerHeight="96px"
+  />
+  <app-cards
+    #cardsRef
+    title="Explore Departments"
+    [items]="deps"
+    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
+    [imageFullHeight]="true"
+    [itemsInRow]="2"
+    itemsWidth="1fr"
+    linkText="All Departments"
+    imageObjectFit="cover"
+    linkTextColor="#017185"
+    imageContainerMarginBottom="2px"
+    [showMarginAfterDiscount]="false"
+    imageContainerHeight="65px"
+    [showKeepExploring]="true"
   />
 </div>

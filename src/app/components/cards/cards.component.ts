@@ -1,18 +1,27 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { CardsInfoComponent } from './cards-info';
-import { CardsImageComponent } from './cards-image';
 import { CardComponent } from './card';
+import { LinkComponent } from '../link';
+import { KeepExploringComponent } from '../keep-exploring';
 
 export interface Card {
   id: string;
-  title: string;
+  title?: string;
   image: string;
-  price_int: string;
-  price_cent: string;
-  price_sale?: string;
-  currency_code: string;
-  currency_sign: string;
+  price_int?: number;
+  price_cent?: number;
+  price_crossed?: number;
+  currency_code?: string;
+  currency_sign?: string;
+  viewed_count?: number;
+  discount?: number;
+}
+
+export enum CardsInfoPlacement {
+  top = 'top',
+  right = 'right',
+  bottom = 'bottom',
+  left = 'left',
 }
 
 @Component({
@@ -20,9 +29,9 @@ export interface Card {
   standalone: true,
   imports: [
     CommonModule,
-    CardsInfoComponent,
-    CardsImageComponent,
     CardComponent,
+    LinkComponent,
+    KeepExploringComponent,
   ],
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.scss'],
@@ -31,10 +40,26 @@ export interface Card {
 export class CardsComponent {
   @Input() items: Card[] = [];
   @Input() title = '';
+  @Input() linkText = '';
   @Input() showPrice = true;
-  @Input() cardsInfoOnBottom = false;
+  @Input() cardsInfoPlacement: keyof typeof CardsInfoPlacement = CardsInfoPlacement.top;
   @Input() imageFullHeight = false;
   @Input() itemsInRow = 13;
   @Input() itemsWidth = '135px';
   @Input() cardBorder: string = 'none';
+  @Input() showviewedCount = false;
+  @Input() titleStaticHeight = '';
+  @Input() imageContainerMarginBottom = '10px';
+  @Input() imageContainerBg!: string;
+  @Input() imageContainerHeight!: string;
+  @Input() borderRadius!: string;
+  @Input() imageObjectFit!: string;
+  @Input() showMarginAfterDiscount!: boolean;
+  @Input() linkTextColor!: string;
+  @Input() cardBorderRadius!: string;
+  @Input() imageContainerBorderRadius!: string;
+  @Input() showInfo = true;
+  @Input() showKeepExploring = false;
+
+  readonly CardsInfoPlacement = CardsInfoPlacement;
 }
