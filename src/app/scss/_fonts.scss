@@ -1,0 +1,136 @@
+// 100 - Thin
+// 200 - Extra Light, Ultra Light
+// 300 - Light
+// 400 - Normal, Book, Regular
+// 500 - Medium
+// 600 - Semi Bold, Demi Bold
+// 700 - Bold
+// 800 - Extra Bold, Ultra Bold
+// 900 - Black, Heavy
+
+// Deepest possible browser support
+//
+// @font-face {
+//   font-family: 'MyWebFont';
+//   src: url('webfont.eot'); /* IE9 Compat Modes */
+//   src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//        url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+//        url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+//        url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+//        url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+// }
+
+// Headlines:
+// - Amazon Ember Display Light.
+// - The space after a headline should be between ¼ –⅔ times the leading.
+
+// Subheades:
+// - Amazon Ember Bold.
+// - They should be no more than ½ the point size of the headline font.
+
+// Body text:
+// - Amazon Ember Light
+// - left aligned
+// - max words per line - 15
+// - line-height ~1⅓ font size
+// - text should be 2x cap-height away from all borders
+//  & 1.5 cap-height away from all foreground objects
+
+@font-face {
+  font-family: "worksans";
+  src: url("/assets/Work_Sans/static/WorkSans-Thin.ttf") format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "worksans";
+  src: url("/assets/Work_Sans/static/WorkSans-ExtraLight.ttf") format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "worksans";
+  src: url("/assets/Work_Sans/static/WorkSans-Light.ttf") format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "worksans";
+  src: url("/assets/Work_Sans/static/WorkSans-Regular.ttf") format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "worksans";
+  src: url("/assets/Work_Sans/static/WorkSans-Medium.ttf") format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "worksans";
+  src: url("/assets/Work_Sans/static/WorkSans-SemiBold.ttf") format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "worksans";
+  src: url("/assets/Work_Sans/static/WorkSans-Bold.ttf") format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "worksans";
+  src: url("/assets/Work_Sans/static/WorkSans-ExtraBold.ttf") format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "worksans";
+  src: url("/assets/Work_Sans/static/WorkSans-Black.ttf") format('truetype');
+  font-weight: 900;
+}
+
+.font-wight_thin {
+  font-family: worksans, serif, sans-serif;
+  font-weight: 100;
+}
+
+.font-wight_extra-light {
+  font-family: worksans, serif, sans-serif;
+  font-weight: 200;
+}
+
+.font-wight_light {
+  font-family: worksans, serif, sans-serif;
+  font-weight: 300;
+}
+
+.font-wight_regular {
+  font-family: worksans, serif, sans-serif;
+  font-weight: 400;
+}
+
+.font-wight_medium {
+  font-family: worksans, serif, sans-serif;
+  font-weight: 500;
+}
+
+.font-wight_semi-bold {
+  font-family: worksans, serif, sans-serif;
+  font-weight: 600;
+}
+
+.font-wight_bold {
+  font-family: worksans, serif, sans-serif;
+  font-weight: 700;
+}
+
+.font-wight_extra-bold {
+  font-family: worksans, serif, sans-serif;
+  font-weight: 800;
+}
+
+.font-wight_black {
+  font-family: worksans, serif, sans-serif;
+  font-weight: 900;
+}
