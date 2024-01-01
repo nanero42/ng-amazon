@@ -1,1 +1,2 @@
-export * from './cards2.component';
+export * from './cards-one-line';
+export * from './cards-standart';

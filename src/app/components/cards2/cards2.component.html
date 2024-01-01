@@ -1,9 +1,0 @@
-<ng-container [ngSwitch]="category">
-  <ng-container *ngSwitchCase="Cards2Categories.oneLine">
-    <app-cards-one-line [items]="items" />
-  </ng-container>
-  <ng-container *ngSwitchCase="Cards2Categories.standart">
-    <app-cards-standart [items]="items" [title]="title" />
-  </ng-container>
-  <ng-container *ngSwitchDefault>noope</ng-container>
-</ng-container>

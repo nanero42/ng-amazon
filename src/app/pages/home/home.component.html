@@ -2,12 +2,8 @@
   <app-header />
   <app-slider />
 
-  <app-cards2 [items]="oneLineCards" [category]="'oneLine'" />
-  <app-cards2
-    [items]="cards2"
-    [category]="'standart'"
-    title="Related to items you've viewed in Books"
-  />
+  <app-cards-one-line [items]="oneLineCards" />
+  <app-cards-standart [items]="cards2" title="Related to items you've viewed in Books" />
 
   <!-- <app-cards
     [items]="oneLineCards"

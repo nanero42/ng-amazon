@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Card, Cards2Component, CardsComponent, HeaderComponent, SliderComponent } from 'src/app/components';
+import { Card, CardsComponent, CardsOneLineComponent, CardsStandartComponent, HeaderComponent, SliderComponent } from 'src/app/components';
 import { CardComponent } from 'src/app/components/cards/card';
 import { LinkComponent } from 'src/app/components/link';
 
@@ -14,7 +14,8 @@ import { LinkComponent } from 'src/app/components/link';
     CardsComponent,
     CardComponent,
     LinkComponent,
-    Cards2Component,
+    CardsOneLineComponent,
+    CardsStandartComponent,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
