@@ -81,17 +81,11 @@ export class CardImageComponent implements OnInit, OnDestroy {
 
   private watchImageStyle(): void {
     const imageStyleSub = combineLatest([
-      this.imageFullHeight$,
       this.imageObjectFit$,
     ]).pipe(
-      tap(([imageFullHeight, imageObjectFit]) => {
-        const imageFullHeightStyle = {
-          'width': '100%',
-        }
-
+      tap(([imageObjectFit]) => {
         this.imageS$.next({
           'object-fit': imageObjectFit,
-          ...(imageFullHeight && { ...imageFullHeightStyle }),
         });
       }),
     ).subscribe();
