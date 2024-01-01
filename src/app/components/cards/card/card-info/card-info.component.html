@@ -5,7 +5,7 @@
     class="card-info__title truncate_lines_2"
     [ngStyle]="{'height': titleStaticHeight}"
   >
-    {{ item.title }}
+    {{ item.name }}
   </h4>
   <div class="card-info__price-container">
     <app-price *ngIf="showPrice" [item]="item" />

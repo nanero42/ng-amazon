@@ -24,7 +24,7 @@ export class HomeComponent {
   oneLineCards: Card[] = [
     {
       id: '24g35h35',
-      title: 'Small gifts under $20',
+      name: 'Small gifts under $20',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -34,7 +34,7 @@ export class HomeComponent {
     },
     {
       id: '345h4tjh4',
-      title: 'Deals in PCs',
+      name: 'Deals in PCs',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -43,7 +43,7 @@ export class HomeComponent {
     },
     {
       id: '56j56yj5rt4e',
-      title: 'Toys under $25',
+      name: 'Toys under $25',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -52,7 +52,7 @@ export class HomeComponent {
     },
     {
       id: '46j68utfgr3',
-      title: 'Recommended deal for you',
+      name: 'Recommended deal for you',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -61,7 +61,7 @@ export class HomeComponent {
     },
     {
       id: '78k6yhbetrgv3w',
-      title: 'Beauty steals under $25',
+      name: 'Beauty steals under $25',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -70,7 +70,7 @@ export class HomeComponent {
     },
     {
       id: 'ryjnl98k6ybr',
-      title: 'Deals on most-loved gifts',
+      name: 'Deals on most-loved gifts',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -79,7 +79,7 @@ export class HomeComponent {
     },
     {
       id: '67jtgbwg3rg',
-      title: 'Home decor under $50',
+      name: 'Home decor under $50',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -88,7 +88,7 @@ export class HomeComponent {
     },
     {
       id: 'eth5uk5yh3rf',
-      title: 'Shop holiday gift guides',
+      name: 'Shop holiday gift guides',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -97,7 +97,7 @@ export class HomeComponent {
     },
     {
       id: 'asdfwrhyuj4rg',
-      title: 'International Top Seller for you',
+      name: 'International Top Seller for you',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -106,7 +106,7 @@ export class HomeComponent {
     },
     {
       id: 'sffgj7i77uyhrf',
-      title: 'Customer\'s Most-Loved  fashion',
+      name: 'Customer\'s Most-Loved  fashion',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -115,7 +115,7 @@ export class HomeComponent {
     },
     {
       id: 'sdfgrgj7i6jh4erfwv',
-      title: 'Shop storage devices',
+      name: 'Shop storage devices',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -124,7 +124,7 @@ export class HomeComponent {
     },
     {
       id: 'efbh5y3efcbhj',
-      title: 'Holiday deals in fashion',
+      name: 'Holiday deals in fashion',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -133,7 +133,7 @@ export class HomeComponent {
     },
     {
       id: 'sdgui67yef',
-      title: 'Shop holiday hosting essentials',
+      name: 'Shop holiday hosting essentials',
       image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=3398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 20,
       price_cent: 99,
@@ -145,7 +145,7 @@ export class HomeComponent {
   cards2: Card[] = [
     {
       id: 'ergh674tgsdg',
-      title: 'Web Scalability for Startup Engineers',
+      name: 'Web Scalability for Startup Engineers',
       image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 39,
       price_cent: 78,
@@ -155,7 +155,7 @@ export class HomeComponent {
     },
     {
       id: 'hm7u54rfsdvfu6',
-      title: 'Reconfigurable Transceiver Architectural insights ect ect',
+      name: 'Reconfigurable Transceiver Architectural insights ect ect',
       image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 109,
       price_cent: 99,
@@ -164,7 +164,7 @@ export class HomeComponent {
     },
     {
       id: 'erth6uk54twdf',
-      title: 'ASP.NET Core 6 and Angular: Full-stack web development',
+      name: 'ASP.NET Core 6 and Angular: Full-stack web development',
       image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 54,
       price_cent: 99,
@@ -173,7 +173,7 @@ export class HomeComponent {
     },
     {
       id: 'fgh6uk66sdcbh',
-      title: 'Angular for Enterprise Applications: Build scalable systems etc ect',
+      name: 'Angular for Enterprise Applications: Build scalable systems etc ect',
       image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 39,
       price_cent: 99,
@@ -185,13 +185,13 @@ export class HomeComponent {
   keepShoppingCards: Card[] = [
     {
       id: 'rtgh5yj4ge',
-      title: 'Desktop computers',
+      name: 'Desktop computers',
       image: 'https://i.pinimg.com/736x/a1/a0/37/a1a0374c887e43b64e5731e6757c7bf3.jpg',
       viewed_count: 1,
     },
     {
       id: 'fghj7iktg',
-      title: 'Books',
+      name: 'Books',
       image: 'https://st2.depositphotos.com/2769299/7314/i/450/depositphotos_73146775-stock-photo-a-stack-of-books-on.jpg',
       viewed_count: 10,
     },
@@ -200,7 +200,7 @@ export class HomeComponent {
   relatedCards: Card[] = [
     {
       id: 'dfh6ui4rgw',
-      title: 'Designing Distributed Systems: Patterns and Paradigms for something',
+      name: 'Designing Distributed Systems: Patterns and Paradigms for something',
       image: 'https://st2.depositphotos.com/1064024/6471/i/950/depositphotos_64713699-stock-photo-pile-of-old-books.jpg',
       price_int: 23,
       price_cent: 66,
@@ -209,7 +209,7 @@ export class HomeComponent {
     },
     {
       id: 'dfbfhjwer35uyk',
-      title: 'Head First Design Patterns: Building Extensible and Maintainable',
+      name: 'Head First Design Patterns: Building Extensible and Maintainable',
       image: 'https://static8.depositphotos.com/1004221/832/i/950/depositphotos_8329452-stock-photo-pile-of-books-on-a.jpg',
       price_int: 41,
       price_cent: 94,
@@ -218,7 +218,7 @@ export class HomeComponent {
     },
     {
       id: 'asfehj6ui7ywef',
-      title: 'Introduction to Algorithms, fourth edition',
+      name: 'Introduction to Algorithms, fourth edition',
       image: 'https://st.depositphotos.com/1049810/3841/i/950/depositphotos_38411117-stock-photo-books-in-library-room.jpg',
       price_int: 122,
       price_cent: 83,
@@ -231,7 +231,7 @@ export class HomeComponent {
     {
       id: 'sf3rh4h4',
       image: 'https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
-      title: 'Save on Batteries from Energizer & Rayovac',
+      name: 'Save on Batteries from Energizer & Rayovac',
       discount: 41,
     },
   ];
@@ -240,32 +240,32 @@ export class HomeComponent {
     {
       id: 'asvrh5ik54',
       image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
-      title: 'Home & Kitchen',
+      name: 'Home & Kitchen',
     },
     {
       id: 'sdgdj6i64',
       image: 'https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
-      title: 'Health & Household Supplies',
+      name: 'Health & Household Supplies',
     },
     {
       id: 'fgh4tu5u43',
       image: 'https://images.unsplash.com/photo-1570831739435-6601aa3fa4fb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
-      title: 'Beauty',
+      name: 'Beauty',
     },
     {
       id: 'sdfghrty3t283jf',
       image: 'https://images.unsplash.com/photo-1545127398-14699f92334b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
-      title: 'Grocery & Gourmet Foods',
+      name: 'Grocery & Gourmet Foods',
     },
     {
       id: 'asdfgdjtui654fd',
       image: 'https://plus.unsplash.com/premium_photo-1666264200766-2a97a298f91b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
-      title: 'Electronics',
+      name: 'Electronics',
     },
     {
       id: 'asdfgdj5yu3rdfhn',
       image: 'https://images.unsplash.com/photo-1513116476489-7635e79feb27?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
-      title: 'Industrial & Scientific',
+      name: 'Industrial & Scientific',
     },
   ]
 
@@ -296,22 +296,22 @@ export class HomeComponent {
     {
       id: 'weg4tu46',
       image: 'https://images.unsplash.com/photo-1597317628840-d3472f7aa7fc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
-      title: 'Women',
+      name: 'Women',
     },
     {
       id: 'weg4tu35h546',
       image: 'https://images.unsplash.com/photo-1585232350744-974fc9804d65?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
-      title: 'Men',
+      name: 'Men',
     },
     {
       id: '1weg4tu35h546',
       image: 'https://plus.unsplash.com/premium_photo-1676717962720-d9a812c8f8c9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
-      title: 'Girls',
+      name: 'Girls',
     },
     {
       id: '2weg4tu35h546',
       image: 'https://images.unsplash.com/photo-1599360889420-da1afaba9edc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D',
-      title: 'Boys',
+      name: 'Boys',
     },
   ]
 
@@ -319,22 +319,22 @@ export class HomeComponent {
     {
       id: '13rt35y56h5',
       image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D',
-      title: 'Women\'s',
+      name: 'Women\'s',
     },
     {
       id: '23rt35y56h5',
       image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXN8ZW58MHx8MHx8fDA%3D',
-      title: 'Men\'s',
+      name: 'Men\'s',
     },
     {
       id: '33rt35y56h5',
       image: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2hvZXN8ZW58MHx8MHx8fDA%3D',
-      title: 'Girl\'s',
+      name: 'Girl\'s',
     },
     {
       id: '43rt35y56h5',
       image: 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2hvZXN8ZW58MHx8MHx8fDA%3D',
-      title: 'Boy\'s',
+      name: 'Boy\'s',
     },
   ]
   popularCameraGifts: Card[] = [
@@ -412,7 +412,7 @@ export class HomeComponent {
   wireless: Card[] = [
     {
       id: '1as4thj5j67j6',
-      title: 'Fitbit Charge 6 Fitness Tracker with Google apps, Heart Rate on Exercises',
+      name: 'Fitbit Charge 6 Fitness Tracker with Google apps, Heart Rate on Exercises',
       image: 'https://images.unsplash.com/photo-1655804484380-51f5a639f2e8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2lyZWxlc3MlMjBlYXJwaG9uZXxlbnwwfHwwfHx8MA%3D%3D',
       price_int: 129,
       price_cent: 95,
@@ -421,7 +421,7 @@ export class HomeComponent {
     },
     {
       id: '2as4thj5j67j6',
-      title: 'SAMSUNG Galaxy SmartTag2, Bluetooth Tracker, Smart Tag GPS GPS GPS GPS GPS',
+      name: 'SAMSUNG Galaxy SmartTag2, Bluetooth Tracker, Smart Tag GPS GPS GPS GPS GPS',
       image: 'https://images.unsplash.com/photo-1516972238977-89271fb2bab8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdpcmVsZXNzJTIwZWFycGhvbmV8ZW58MHx8MHx8fDA%3D',
       price_int: 21,
       price_cent: 99,
@@ -430,7 +430,7 @@ export class HomeComponent {
     },
     {
       id: '3as4thj5j67j6',
-      title: 'Apple iPhone 11, 64GB, Black - Unlocked (Renewed)',
+      name: 'Apple iPhone 11, 64GB, Black - Unlocked (Renewed)',
       image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHdpcmVsZXNzJTIwZWFycGhvbmV8ZW58MHx8MHx8fDA%3D',
       price_int: 264,
       price_cent: 95,
@@ -489,7 +489,7 @@ export class HomeComponent {
   popularBeauty: Card[] = [
     {
       id: '1sdfgrj6ui65teghg',
-      title: 'Eucerin Q10 Anti Wrinkle Face Cream Bundle, Day Cream and Nig…',
+      name: 'Eucerin Q10 Anti Wrinkle Face Cream Bundle, Day Cream and Nig…',
       image: 'https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXR5JTIwcHJvZHVjdHN8ZW58MHx8MHx8fDA%3D',
       price_int: 16,
       price_cent: 90,
@@ -498,7 +498,7 @@ export class HomeComponent {
     },
     {
       id: '2sdfgrj6ui65teghg',
-      title: 'PanOxyl Antimicrobial Hydrating Acne Creamy Wash, 4% Benzoyl',
+      name: 'PanOxyl Antimicrobial Hydrating Acne Creamy Wash, 4% Benzoyl',
       image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhdXR5JTIwcHJvZHVjdHN8ZW58MHx8MHx8fDA%3D',
       price_int: 9,
       price_cent: 76,
@@ -507,7 +507,7 @@ export class HomeComponent {
     },
     {
       id: '3sdfgrj6ui65teghg',
-      title: 'Burt\'s Bees Christmas Gifts, 5 Stocking Stuffers Products, Everyday',
+      name: 'Burt\'s Bees Christmas Gifts, 5 Stocking Stuffers Products, Everyday',
       image: 'https://images.unsplash.com/photo-1598528738936-c50861cc75a9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmVhdXR5JTIwcHJvZHVjdHN8ZW58MHx8MHx8fDA%3D',
       price_int: 9,
       price_cent: 98,
@@ -517,7 +517,7 @@ export class HomeComponent {
   popularApparel: Card[] = [
     {
       id: '1dfghthk7754ertfhfg',
-      title: 'Timberland PRO Men\'s Low Impact Work Glove',
+      name: 'Timberland PRO Men\'s Low Impact Work Glove',
       image: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXBwYXJlbHxlbnwwfHwwfHx8MA%3D%3D',
       price_int: 16,
       price_cent: 99,
@@ -525,7 +525,7 @@ export class HomeComponent {
     },
     {
       id: '2dfghthk7754ertfhfg',
-      title: 'Nautica Men\'s Classic Fit Short Sleeve Dual Tipped Collar Polo Shirt',
+      name: 'Nautica Men\'s Classic Fit Short Sleeve Dual Tipped Collar Polo Shirt',
       image: 'https://images.unsplash.com/photo-1562157873-818bc0726f68?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJlbHxlbnwwfHwwfHx8MA%3D%3D',
       price_int: 47,
       price_cent: 30,
@@ -533,7 +533,7 @@ export class HomeComponent {
     },
     {
       id: '3dfghthk7754ertfhfg',
-      title: 'Nautica Men\'s Classic Fit Short Sleeve Dual Tipped Collar Polo Shirt',
+      name: 'Nautica Men\'s Classic Fit Short Sleeve Dual Tipped Collar Polo Shirt',
       image: 'https://images.unsplash.com/photo-1555529771-835f59fc5efe?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJlbHxlbnwwfHwwfHx8MA%3D%3D',
       price_int: 27,
       price_cent: 22,
@@ -544,7 +544,7 @@ export class HomeComponent {
   popularPc: Card[] = [
     {
       id: '1dbthjk687uytgdghf',
-      title: 'Intel Core i7-12700KF Gaming Desktop Processor 12 (8P+4E) Core',
+      name: 'Intel Core i7-12700KF Gaming Desktop Processor 12 (8P+4E) Core',
       image: 'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFBDfGVufDB8fDB8fHww',
       price_int: 214,
       price_cent: 99,
@@ -553,7 +553,7 @@ export class HomeComponent {
     },
     {
       id: '2dbthjk687uytgdghf',
-      title: 'Nautica Men\'s Classic Fit Short Sleeve Dual Tipped Collar Polo Shirt',
+      name: 'Nautica Men\'s Classic Fit Short Sleeve Dual Tipped Collar Polo Shirt',
       image: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFBDfGVufDB8fDB8fHww',
       price_int: 139,
       price_cent: 99,
@@ -562,7 +562,7 @@ export class HomeComponent {
     },
     {
       id: '3dbthjk687uytgdghf',
-      title: 'Nautica Men\'s Classic Fit Short Sleeve Dual Tipped Collar Polo Shirt',
+      name: 'Nautica Men\'s Classic Fit Short Sleeve Dual Tipped Collar Polo Shirt',
       image: 'https://images.unsplash.com/photo-1585143042060-77fd3b53905a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFBDfGVufDB8fDB8fHww',
       price_int: 19,
       price_cent: 99,
@@ -653,7 +653,7 @@ export class HomeComponent {
   topInternationalKitchens: Card[] = [
     {
       id: '1fbghtkli7oi65ytrfgd',
-      title: 'Secura French Press Coffee Maker, 304 Grade Stainless Steel',
+      name: 'Secura French Press Coffee Maker, 304 Grade Stainless Steel',
       image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D',
       price_int: 21,
       price_cent: 10,
@@ -662,7 +662,7 @@ export class HomeComponent {
     },
     {
       id: '2fbghtkli7oi65ytrfgd',
-      title: 'LloydPans Quik-Disks, Pre Seasoned PSTK, Perforated Pizza (1, 12 inch)',
+      name: 'LloydPans Quik-Disks, Pre Seasoned PSTK, Perforated Pizza (1, 12 inch)',
       image: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D',
       price_int: 13,
       price_cent: 60,
@@ -671,7 +671,7 @@ export class HomeComponent {
     },
     {
       id: '3fbghtkli7oi65ytrfgd',
-      title: 'OXO Good Grips 7-Piece Nesting Measuring Beaker Set',
+      name: 'OXO Good Grips 7-Piece Nesting Measuring Beaker Set',
       image: 'https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D',
       price_int: 22,
       price_cent: 99,
@@ -687,7 +687,7 @@ export class HomeComponent {
   topBooksSellers: Card[] = [
     {
       id: '1dfbghjk6uy3tgdgf',
-      title: 'オペレーション日本　祈りのガイド (Japanese Edition)',
+      name: 'オペレーション日本　祈りのガイド (Japanese Edition)',
       image: 'https://images.unsplash.com/photo-1550399105-c4db5fb85c18?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJvb2tzfGVufDB8fDB8fHww',
       price_int: 7,
       price_cent: 42,
@@ -695,7 +695,7 @@ export class HomeComponent {
     },
     {
       id: '2dfbghjk6uy3tgdgf',
-      title: 'CeraVe Skin Renewing Night Cream | Niacinamide, Peptide Complex, analysis',
+      name: 'CeraVe Skin Renewing Night Cream | Niacinamide, Peptide Complex, analysis',
       image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJvb2tzfGVufDB8fDB8fHww',
       price_int: 15,
       price_cent: 38,
@@ -704,7 +704,7 @@ export class HomeComponent {
     },
     {
       id: '3dfbghjk6uy3tgdgf',
-      title: 'CeraVe Skin Renewing Night Cream | Niacinamide, Peptide Complex, analysis',
+      name: 'CeraVe Skin Renewing Night Cream | Niacinamide, Peptide Complex, analysis',
       image: 'https://images.unsplash.com/photo-1526243741027-444d633d7365?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJvb2tzfGVufDB8fDB8fHww',
       price_int: 15.38,
       price_cent: 99,
@@ -716,32 +716,32 @@ export class HomeComponent {
     {
       id: '1cbngkyt54ewedfvbu',
       image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhdXR5fGVufDB8fDB8fHww',
-      title: 'Beauty',
+      name: 'Beauty',
     },
     {
       id: '2cbngkyt54ewedfvbu',
       image: 'https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGtpdGNoZW58ZW58MHx8MHx8fDA%3D',
-      title: 'Home and Kitchen',
+      name: 'Home and Kitchen',
     },
     {
       id: '3cbngkyt54ewedfvbu',
       image: 'https://plus.unsplash.com/premium_photo-1673995611997-b1415658ccbd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3BvcnR8ZW58MHx8MHx8fDA%3D',
-      title: 'Sports and Outdoors',
+      name: 'Sports and Outdoors',
     },
     {
       id: '4cbngkyt54ewedfvbu',
       image: 'https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGVsZWN0cm9uaWNzfGVufDB8fDB8fHww',
-      title: 'Electronics',
+      name: 'Electronics',
     },
     {
       id: '5cbngkyt54ewedfvbu',
       image: 'https://plus.unsplash.com/premium_photo-1676225680209-19a398a9b38a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D',
-      title: 'Outdoor Clothing',
+      name: 'Outdoor Clothing',
     },
     {
       id: '6cbngkyt54ewedfvbu',
       image: 'https://plus.unsplash.com/premium_photo-1664305042447-9178fb625765?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3VwcGxpZXN8ZW58MHx8MHx8fDA%3D',
-      title: 'Pet Supplies',
+      name: 'Pet Supplies',
     },
   ]
 }
