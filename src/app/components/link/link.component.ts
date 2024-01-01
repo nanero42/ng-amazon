@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LinkComponent {
-  private _textColor = '#000';
+  private _textColor = '#017185';
 
   @Input() text!: string;
   @Input() imageUrl!: string;

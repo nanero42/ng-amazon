@@ -1,14 +1,14 @@
-<div *ngIf="showInfo" class="card-info" [ngStyle]="getCardsInfoPlacementStyle()?.cardsInfo">
+<div *ngIf="showInfo" class="info" [ngStyle]="getCardsInfoPlacementStyle()?.cardsInfo">
   <app-discount [discount]="discount" />
   <div *ngIf="showMarginAfterDiscount" style="padding-bottom: 8px;"></div>
   <h4
-    class="card-info__title truncate_lines_2"
+    class="title truncate_lines_2"
     [ngStyle]="{'height': titleStaticHeight}"
   >
-    {{ item.title }}
+    {{ item.name }}
   </h4>
-  <div class="card-info__price-container">
+  <div class="price-container">
     <app-price *ngIf="showPrice" [item]="item" />
   </div>
-  <span *ngIf="showviewedCount" class="card-info__viewed-count">{{ item.viewed_count }} viewed</span>
+  <span *ngIf="showviewedCount" class="viewed-count">{{ item.viewed_count }} viewed</span>
 </div>

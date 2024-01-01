@@ -6,7 +6,7 @@ import { KeepExploringComponent } from '../keep-exploring';
 
 export interface Card {
   id: string;
-  title?: string;
+  name?: string;
   image: string;
   price_int?: number;
   price_cent?: number;
