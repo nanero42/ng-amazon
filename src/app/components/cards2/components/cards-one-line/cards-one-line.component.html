@@ -1,0 +1,10 @@
+<div class="cards">
+  <ul class="list">
+    <li *ngFor="let item of items" class="item">
+      <h3 class="title">{{ item.title }}</h3>
+      <div class="image-container">
+        <img [attr.src]="item.image" alt="Product">
+      </div>
+    </li>
+  </ul>
+</div>

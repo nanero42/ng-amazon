@@ -1,31 +1,3 @@
 :host { display: contents; }
 
-.cards__one-line {
-  background: #FFF;
-}
 
-.cards__one-line-list {
-  display: flex;
-  overflow-x: scroll;
-  gap: 10px;
-  padding-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.cards__one-line-item {
-  width: 133px;
-  flex: 0 0 auto;
-  border-radius: 6px;
-  border: 1px solid #EEE;
-}
-
-.cards__one-line-title {
-  height: 33px;
-  margin-bottom: 6px;
-}
-
-.cards__one-line-image-container {
-  overflow: hidden;
-  height: 150px;
-}

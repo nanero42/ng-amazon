@@ -1,15 +1,6 @@
 <ng-container [ngSwitch]="category">
   <ng-container *ngSwitchCase="Cards2Categories.oneLine">
-    <div class="cards__one-line">
-      <ul class="cards__one-line-list">
-        <li *ngFor="let item of items" class="cards__one-line-item">
-          <h3 class="cards__one-line-title">{{ item.title }}</h3>
-          <div class="cards__one-line-image-container">
-            <img [attr.src]="item.image" alt="Product" class="cards__one-line-image">
-          </div>
-        </li>
-      </ul>
-    </div>
+    <app-cards-one-line [items]="items" />
   </ng-container>
   <ng-container *ngSwitchDefault>
     noope
