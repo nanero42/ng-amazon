@@ -1,5 +1,5 @@
-<div class="card__image" [ngStyle]="getCardsInfoPlacement()?.cardsImage">
-  <div class="card__image-container" [ngStyle]="containerS$ | async">
+<div [ngStyle]="getCardsInfoPlacement()?.cardsImage">
+  <div class="image-container" [ngStyle]="containerS$ | async">
     <img [attr.src]="item.image" alt="Product" [ngStyle]="imageS$ | async">
   </div>
 </div>

@@ -1,9 +1,9 @@
 <div class="cards">
   <app-keep-exploring *ngIf="showKeepExploring" />
-  <div class="cards__container">
-    <h3 class="cards__title truncate">{{ title }}</h3>
+  <div class="container">
+    <h3 class="title truncate">{{ title }}</h3>
     <ul
-      class="cards__list"
+      class="list"
       [ngStyle]="{'grid-template-columns': 'repeat(' + itemsInRow + ', ' + itemsWidth + ')'}"
     >
       <app-card
