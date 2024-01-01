@@ -3,6 +3,11 @@
   <app-slider />
 
   <app-cards2 [items]="oneLineCards" [category]="'oneLine'" />
+  <app-cards2
+    [items]="cards2"
+    [category]="'standart'"
+    title="Related to items you've viewed in Books"
+  />
 
   <!-- <app-cards
     [items]="oneLineCards"
@@ -14,7 +19,7 @@
     imageContainerBorderRadius="0"
     imageObjectFit="cover"
   /> -->
-  <app-cards
+  <!-- <app-cards
     #cardsRef
     title="Related to items you've viewed in Books"
     [items]="cards2"
@@ -24,7 +29,7 @@
     itemsWidth="1fr"
     linkText="Explore more"
     linkTextColor="#017185"
-  />
+  /> -->
   <app-cards
     title="Keep shopping for"
     [items]="keepShoppingCards"

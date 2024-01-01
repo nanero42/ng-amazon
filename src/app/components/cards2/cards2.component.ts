@@ -2,9 +2,11 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Card } from '../cards/cards.component';
 import { CardsOneLineComponent } from './components';
+import { CardsStandartComponent } from './components/cards-standart/cards-standart.component';
 
 export enum Cards2Categories {
   oneLine = 'oneLine',
+  standart = 'standart',
 }
 
 @Component({
@@ -13,6 +15,7 @@ export enum Cards2Categories {
   imports: [
     CommonModule,
     CardsOneLineComponent,
+    CardsStandartComponent,
   ],
   templateUrl: './cards2.component.html',
   styleUrls: ['./cards2.component.scss'],
@@ -23,4 +26,5 @@ export class Cards2Component {
 
   @Input({ required: true }) category!: keyof typeof Cards2Categories;
   @Input() items: Card[] = [];
+  @Input() title!: string;
 }
