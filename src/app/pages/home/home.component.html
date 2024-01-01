@@ -2,19 +2,7 @@
   <app-header />
   <app-slider />
 
-  <app-cards-one-line [items]="oneLineCards" />
-  <app-cards-standart
-    title="Related to items you've viewed in Books"
-    [items]="cards2"
-    linkText="Explore more"
-  />
-  <app-cards-standart
-    title="Keep shopping for"
-    [items]="keepShoppingCards"
-    linkText=" View your browsing history"
-  />
-
-  <!-- <app-cards
+  <app-cards
     [items]="oneLineCards"
     [showPrice]="false"
     cardBorder="1px solid #EEE"
@@ -23,8 +11,8 @@
     cardBorderRadius="6px"
     imageContainerBorderRadius="0"
     imageObjectFit="cover"
-  /> -->
-  <!-- <app-cards
+  />
+  <app-cards
     #cardsRef
     title="Related to items you've viewed in Books"
     [items]="cards2"
@@ -34,8 +22,8 @@
     itemsWidth="1fr"
     linkText="Explore more"
     linkTextColor="#017185"
-  /> -->
-  <!-- <app-cards
+  />
+  <app-cards
     title="Keep shopping for"
     [items]="keepShoppingCards"
     [showPrice]="false"
@@ -46,7 +34,7 @@
     itemsWidth="1fr"
     linkText="View your browsing history"
     linkTextColor="#017185"
-  /> -->
+  />
   <app-cards
     title="Related to items you've viewed"
     [items]="relatedCards"

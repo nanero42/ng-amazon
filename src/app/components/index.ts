@@ -6,4 +6,3 @@ export * from './slider';
 export * from './cards';
 export * from './price';
 export * from './discount';
-export * from './cards2';
