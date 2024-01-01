@@ -1,8 +1,11 @@
 <div class="home">
   <app-header />
   <app-slider />
-  <app-cards
-    [items]="cards"
+
+  <app-cards2 [items]="oneLineCards" [category]="'oneLine'" />
+
+  <!-- <app-cards
+    [items]="oneLineCards"
     [showPrice]="false"
     cardBorder="1px solid #EEE"
     titleStaticHeight="42px"
@@ -10,7 +13,7 @@
     cardBorderRadius="6px"
     imageContainerBorderRadius="0"
     imageObjectFit="cover"
-  />
+  /> -->
   <app-cards
     #cardsRef
     title="Related to items you've viewed in Books"
