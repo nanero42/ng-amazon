@@ -3,7 +3,11 @@
   <ul class="list">
     <li *ngFor="let item of items" class="item">
       <div class="image-container">
-        <img [attr.src]="item.image" alt="Product" class="image">
+        <img
+          [attr.src]="item.image"
+          alt="Product"
+          class="image"
+        >
       </div>
       <div class="descr">{{ item.name }}</div>
       <div class="price">
@@ -11,4 +15,5 @@
       </div>
     </li>
   </ul>
+  <app-link *ngIf="linkText" [text]="linkText" />
 </div>

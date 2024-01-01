@@ -3,7 +3,16 @@
   <app-slider />
 
   <app-cards-one-line [items]="oneLineCards" />
-  <app-cards-standart [items]="cards2" title="Related to items you've viewed in Books" />
+  <app-cards-standart
+    title="Related to items you've viewed in Books"
+    [items]="cards2"
+    linkText="Explore more"
+  />
+  <app-cards-standart
+    title="Keep shopping for"
+    [items]="keepShoppingCards"
+    linkText=" View your browsing history"
+  />
 
   <!-- <app-cards
     [items]="oneLineCards"

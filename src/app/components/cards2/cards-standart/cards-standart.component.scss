@@ -1,5 +1,6 @@
 .cards__standart {
   background-color: #FFF;
+  padding-bottom: 6px;
 }
 
 .list {
@@ -30,7 +31,8 @@
 }
 
 .image {
-  width: 60%;
+  width: 80%;
+  padding: 10px 0;
   object-fit: contain;
   height: auto;
 }
