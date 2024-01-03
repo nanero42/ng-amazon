@@ -11,6 +11,9 @@
     cardBorderRadius="6px"
     imageContainerBorderRadius="0"
     imageObjectFit="cover"
+    [breakpoints]="[
+      { condition: 'min-width 0', columns: 'repeat(13, 135px)' },
+    ]"
   />
   <app-cards
     #cardsRef
@@ -19,6 +22,13 @@
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
     [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 581 and max-width 700', columns: 'repeat(4, 1fr)' },
+      { condition: 'min-width 701', columns: 'repeat(4, 1fr)' },
+    ]"
+    defaultColumns="repeat(2, 1fr)"
     itemsWidth="1fr"
     linkText="Explore more"
     linkTextColor="#017185"
@@ -31,6 +41,10 @@
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
     [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361', columns: 'repeat(2, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="View your browsing history"
     linkTextColor="#017185"
@@ -63,6 +77,10 @@
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
     [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width: 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581', columns: 'repeat(3, 1fr)' },
+    ]"
     itemsWidth="1fr"
   />
   <app-cards
@@ -72,6 +90,11 @@
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
     [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="See all deals"
     linkTextColor="#017185"
@@ -83,6 +106,11 @@
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
     [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="Shop all"
     imageObjectFit="cover"
@@ -97,6 +125,12 @@
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
     [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="Shop all"
     imageObjectFit="cover"
@@ -114,6 +148,12 @@
     [imageFullHeight]="true"
     [itemsInRow]="2"
     [showInfo]="false"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="Shop now"
     imageObjectFit="cover"
@@ -127,6 +167,12 @@
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
     [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     [showInfo]="false"
     itemsWidth="1fr"
     linkText="Shop now"
@@ -142,6 +188,12 @@
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
     [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     [showInfo]="false"
     itemsWidth="1fr"
     linkText="Shop now"
@@ -156,6 +208,12 @@
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
     [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     [showInfo]="false"
     itemsWidth="1fr"
     linkText="Shop now"
@@ -206,6 +264,12 @@
     [imageFullHeight]="true"
     [itemsInRow]="2"
     [showInfo]="false"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="Shop now"
     imageObjectFit="cover"
@@ -220,6 +284,12 @@
     [imageFullHeight]="true"
     [itemsInRow]="2"
     [showInfo]="false"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="See more"
     imageObjectFit="cover"
@@ -261,6 +331,12 @@
     [imageFullHeight]="true"
     [itemsInRow]="2"
     [showInfo]="false"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="See more"
     imageObjectFit="cover"
@@ -275,6 +351,12 @@
     [imageFullHeight]="true"
     [itemsInRow]="2"
     [showInfo]="false"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="See more"
     imageObjectFit="cover"
@@ -302,6 +384,11 @@
     [imageFullHeight]="true"
     [itemsInRow]="3"
     [showInfo]="false"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 581', columns: 'repeat(5, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="See now"
     imageObjectFit="cover"
@@ -346,6 +433,12 @@
     [items]="deps"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(4, 1fr)' },
+      { condition: 'min-width 1025 ', columns: 'repeat(6, 1fr)' },
+    ]"
     [itemsInRow]="2"
     itemsWidth="1fr"
     linkText="All Departments"
