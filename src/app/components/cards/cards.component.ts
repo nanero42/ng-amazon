@@ -56,8 +56,6 @@ export class CardsComponent implements OnInit, OnDestroy {
   @Input() showPrice = true;
   @Input() cardsInfoPlacement: keyof typeof CardsInfoPlacement = CardsInfoPlacement.top;
   @Input() imageFullHeight = false;
-  @Input() itemsInRow = 13;
-  @Input() itemsWidth = '135px';
   @Input() cardBorder: string = 'none';
   @Input() showviewedCount = false;
   @Input() titleStaticHeight = '';
