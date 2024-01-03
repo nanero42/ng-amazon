@@ -77,6 +77,14 @@ export class CardsComponent implements OnInit, OnDestroy {
   readonly CardsInfoPlacement = CardsInfoPlacement;
 
   ngOnInit(): void {
+    this.initBreakpoints();
+  }
+
+  ngOnDestroy(): void {
+    this.subs.unsubscribeAll();
+  }
+
+  private initBreakpoints() {
     const viewportWidth = this.viewportService.getWidth$().pipe(
       tap((width) => {
         this.breakpoints.forEach(({ condition, columns }) => {
@@ -107,9 +115,5 @@ export class CardsComponent implements OnInit, OnDestroy {
     ).subscribe();
 
     this.subs.addSub('viewportWidth', viewportWidth);
-  }
-
-  ngOnDestroy(): void {
-    this.subs.unsubscribeAll();
   }
 }
