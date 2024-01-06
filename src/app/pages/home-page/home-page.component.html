@@ -11,6 +11,9 @@
     cardBorderRadius="6px"
     imageContainerBorderRadius="0"
     imageObjectFit="cover"
+    [breakpoints]="[
+      { condition: 'min-width 0', columns: 'repeat(13, 135px)' },
+    ]"
   />
   <app-cards
     #cardsRef
@@ -18,7 +21,13 @@
     [items]="cards2"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 581 and max-width 700', columns: 'repeat(4, 1fr)' },
+      { condition: 'min-width 701', columns: 'repeat(4, 1fr)' },
+    ]"
+    defaultColumns="repeat(2, 1fr)"
     itemsWidth="1fr"
     linkText="Explore more"
     linkTextColor="#017185"
@@ -30,7 +39,10 @@
     [showviewedCount]="true"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361', columns: 'repeat(2, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="View your browsing history"
     linkTextColor="#017185"
@@ -40,14 +52,12 @@
     [items]="relatedCards"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
     [imageFullHeight]="true"
-    [itemsInRow]="1"
     itemsWidth="1fr"
   />
   <app-cards
     title="Shop deals"
     [items]="shopDealsItem"
     [imageFullHeight]="true"
-    [itemsInRow]="1"
     itemsWidth="1fr"
     imageContainerBg="#FFF"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
@@ -62,7 +72,10 @@
     [items]="categories"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width: 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581', columns: 'repeat(3, 1fr)' },
+    ]"
     itemsWidth="1fr"
   />
   <app-cards
@@ -71,7 +84,11 @@
     [items]="recommendedDeals"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="See all deals"
     linkTextColor="#017185"
@@ -82,7 +99,11 @@
     [items]="apparels"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="Shop all"
     imageObjectFit="cover"
@@ -96,7 +117,12 @@
     [items]="shoes"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="Shop all"
     imageObjectFit="cover"
@@ -112,8 +138,13 @@
     [items]="popularCameraGifts"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
     [showInfo]="false"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="Shop now"
     imageObjectFit="cover"
@@ -126,7 +157,12 @@
     [items]="tablets"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     [showInfo]="false"
     itemsWidth="1fr"
     linkText="Shop now"
@@ -141,7 +177,12 @@
     [items]="electronics"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     [showInfo]="false"
     itemsWidth="1fr"
     linkText="Shop now"
@@ -155,7 +196,12 @@
     [items]="discountElectronics"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     [showInfo]="false"
     itemsWidth="1fr"
     linkText="Shop now"
@@ -168,7 +214,6 @@
     [items]="wireless"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
     [imageFullHeight]="true"
-    [itemsInRow]="1"
     itemsWidth="1fr"
     imageContainerHeight="96px"
   />
@@ -176,7 +221,6 @@
     title="Personal Care under $25"
     [items]="personalCares"
     [imageFullHeight]="true"
-    [itemsInRow]="1"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [showInfo]="false"
     itemsWidth="1fr"
@@ -189,7 +233,6 @@
     title="Delas in Shoes"
     [items]="delasInShoes"
     [imageFullHeight]="true"
-    [itemsInRow]="1"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [showInfo]="false"
     itemsWidth="1fr"
@@ -204,8 +247,13 @@
     [items]="favoriteToys"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
     [showInfo]="false"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="Shop now"
     imageObjectFit="cover"
@@ -218,8 +266,13 @@
     [items]="womenFashionSneakers"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
     [showInfo]="false"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="See more"
     imageObjectFit="cover"
@@ -231,7 +284,6 @@
     [items]="popularBeauty"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
     [imageFullHeight]="true"
-    [itemsInRow]="1"
     itemsWidth="1fr"
     imageContainerHeight="96px"
   />
@@ -240,7 +292,6 @@
     [items]="popularApparel"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
     [imageFullHeight]="true"
-    [itemsInRow]="1"
     itemsWidth="1fr"
     imageContainerHeight="96px"
   />
@@ -249,7 +300,6 @@
     [items]="popularPc"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
     [imageFullHeight]="true"
-    [itemsInRow]="1"
     itemsWidth="1fr"
     imageContainerHeight="96px"
   />
@@ -259,8 +309,13 @@
     [items]="musthaveBabyProducts"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
     [showInfo]="false"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="See more"
     imageObjectFit="cover"
@@ -273,8 +328,13 @@
     [items]="everydayEssentials"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
     [showInfo]="false"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 1025', columns: 'repeat(4, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="See more"
     imageObjectFit="cover"
@@ -285,7 +345,6 @@
     title="Home & Kitchen Under $30"
     [items]="kitchens"
     [imageFullHeight]="true"
-    [itemsInRow]="1"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [showInfo]="false"
     itemsWidth="1fr"
@@ -300,8 +359,12 @@
     [items]="popularGifts"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="3"
     [showInfo]="false"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 581', columns: 'repeat(5, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="See now"
     imageObjectFit="cover"
@@ -314,7 +377,6 @@
     [items]="topInternationalKitchens"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
     [imageFullHeight]="true"
-    [itemsInRow]="1"
     itemsWidth="1fr"
     imageContainerHeight="96px"
   />
@@ -322,7 +384,6 @@
     title="Deals on books"
     [items]="dealsOnBooks"
     [imageFullHeight]="true"
-    [itemsInRow]="1"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [showInfo]="false"
     itemsWidth="1fr"
@@ -336,7 +397,6 @@
     [items]="topBooksSellers"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
     [imageFullHeight]="true"
-    [itemsInRow]="1"
     itemsWidth="1fr"
     imageContainerHeight="96px"
   />
@@ -346,7 +406,12 @@
     [items]="deps"
     [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
     [imageFullHeight]="true"
-    [itemsInRow]="2"
+    [breakpoints]="[
+      { condition: 'min-width 0 and max-width 360', columns: 'repeat(2, 1fr)' },
+      { condition: 'min-width 361 and max-width 580', columns: 'repeat(3, 1fr)' },
+      { condition: 'min-width 581 and max-width 1024', columns: 'repeat(4, 1fr)' },
+      { condition: 'min-width 1025 ', columns: 'repeat(6, 1fr)' },
+    ]"
     itemsWidth="1fr"
     linkText="All Departments"
     imageObjectFit="cover"

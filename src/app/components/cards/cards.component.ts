@@ -1,8 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { CardComponent } from './card';
-import { LinkComponent } from '../link';
+import { ChangeDetectionStrategy, Component, Input, OnDestroy, OnInit, inject } from '@angular/core';
+import { BehaviorSubject, tap } from 'rxjs';
+import { SubscriptionService, ViewportService } from 'src/app/providers';
 import { KeepExploringComponent } from '../keep-exploring';
+import { LinkComponent } from '../link';
+import { CardComponent } from './card';
 
 export interface Card {
   id: string;
@@ -15,6 +17,11 @@ export interface Card {
   currency_sign?: string;
   viewed_count?: number;
   discount?: number;
+}
+
+export interface Breakpoint {
+  condition: string;
+  columns: string;
 }
 
 export enum CardsInfoPlacement {
@@ -37,15 +44,18 @@ export enum CardsInfoPlacement {
   styleUrls: ['./cards.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardsComponent {
+export class CardsComponent implements OnInit, OnDestroy {
+  private readonly subs = inject(SubscriptionService);
+  private readonly viewportService = inject(ViewportService);
+
+  readonly columns$ = new BehaviorSubject('');
+
   @Input() items: Card[] = [];
   @Input() title = '';
   @Input() linkText = '';
   @Input() showPrice = true;
   @Input() cardsInfoPlacement: keyof typeof CardsInfoPlacement = CardsInfoPlacement.top;
   @Input() imageFullHeight = false;
-  @Input() itemsInRow = 13;
-  @Input() itemsWidth = '135px';
   @Input() cardBorder: string = 'none';
   @Input() showviewedCount = false;
   @Input() titleStaticHeight = '';
@@ -60,6 +70,48 @@ export class CardsComponent {
   @Input() imageContainerBorderRadius!: string;
   @Input() showInfo = true;
   @Input() showKeepExploring = false;
+  @Input() breakpoints: Breakpoint[] = [];
 
   readonly CardsInfoPlacement = CardsInfoPlacement;
+
+  ngOnInit(): void {
+    this.initBreakpoints();
+  }
+
+  ngOnDestroy(): void {
+    this.subs.unsubscribeAll();
+  }
+
+  private initBreakpoints() {
+    const viewportWidth = this.viewportService.getWidth$().pipe(
+      tap((width) => {
+        this.breakpoints.forEach(({ condition, columns }) => {
+          const minWidthAndValue = condition.match(/min-width\s[0-9]{1,}/gi)?.[0];
+          const minWidth = minWidthAndValue?.match(/min-width/gi)?.[0];
+          const minWidthValue = minWidthAndValue?.match(/[0-9]{1,}/gi)?.[0];
+
+          const and = condition.match(/and/gi)?.[0];
+
+          const maxWidthAndValue = condition.match(/max-width\s[0-9]{1,}/gi)?.[0];
+          const maxWidth = maxWidthAndValue?.match(/max-width/gi)?.[0];
+          const maxWidthValue = maxWidthAndValue?.match(/[0-9]{1,}/gi)?.[0];
+
+          const isMinConditionValid = minWidthAndValue && minWidth && minWidthValue;
+          const isMaxConditionValid = maxWidthAndValue && maxWidth && maxWidthValue;
+
+          if (isMinConditionValid && and && isMaxConditionValid) {
+            width >= +minWidthValue && width <= +maxWidthValue && this.columns$.next(columns);
+          } else if (isMinConditionValid) {
+            width >= +minWidthValue && this.columns$.next(columns);
+          } else if (isMaxConditionValid) {
+            width <= +maxWidthValue && this.columns$.next(columns);
+          } else {
+            this.columns$.next('');
+          }
+        })
+      })
+    ).subscribe();
+
+    this.subs.addSub('viewportWidth', viewportWidth);
+  }
 }

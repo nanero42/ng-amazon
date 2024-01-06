@@ -2,10 +2,7 @@
   <app-keep-exploring *ngIf="showKeepExploring" />
   <div class="container">
     <h3 class="title truncate">{{ title }}</h3>
-    <ul
-      class="list"
-      [ngStyle]="{'grid-template-columns': 'repeat(' + itemsInRow + ', ' + itemsWidth + ')'}"
-    >
+    <ul class="list" [ngStyle]="{'grid-template-columns': columns$ | async}">
       <app-card
         *ngFor="let item of items"
         [item]="item"

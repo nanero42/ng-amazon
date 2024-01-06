@@ -10,6 +10,7 @@
 - toggle dark / light / any_other_color theme
 
 - slider:
+ -- add content projection to be able to insert custom template to each slide
  -- extract slides array from slider component to home-page
  -- now slider works only for desktop (mouse event), add support for mobile (touch event)
  -- add ability to slide back from the first slide and return to the last one slide and vice versa.
