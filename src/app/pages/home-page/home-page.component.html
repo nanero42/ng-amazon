@@ -2,19 +2,10 @@
   <app-header />
   <app-slider />
 
-  <app-cards
+  <app-cards-one-line
     [items]="oneLineCards"
-    [showPrice]="false"
-    cardBorder="1px solid #EEE"
-    titleStaticHeight="42px"
-    imageContainerMarginBottom=""
-    cardBorderRadius="6px"
-    imageContainerBorderRadius="0"
-    imageObjectFit="cover"
-    [breakpoints]="[
-      { condition: 'min-width 0', columns: 'repeat(13, 135px)' },
-    ]"
   />
+
   <app-cards
     #cardsRef
     title="Related to items you've viewed in Books"
