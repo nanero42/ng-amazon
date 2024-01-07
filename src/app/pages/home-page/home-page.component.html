@@ -9,23 +9,17 @@
   <app-cards-standard
     title="Related to items you've viewed in Books"
     [items]="cards2"
+    [showPrice]="true"
+    linkText="Explore more"
   />
 
-  <app-cards
+  <app-cards-standard
     title="Keep shopping for"
     [items]="keepShoppingCards"
-    [showPrice]="false"
-    [showviewedCount]="true"
-    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
-    [imageFullHeight]="true"
-    [breakpoints]="[
-      { condition: 'min-width 0 and max-width 360', columns: 'repeat(1, 1fr)' },
-      { condition: 'min-width 361', columns: 'repeat(2, 1fr)' },
-    ]"
-    itemsWidth="1fr"
-    linkText="View your browsing history"
-    linkTextColor="#017185"
+    [showViewedCount]="true"
+    linkText="View your browsing historys"
   />
+
   <app-cards
     title="Related to items you've viewed"
     [items]="relatedCards"
