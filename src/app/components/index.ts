@@ -7,3 +7,4 @@ export * from './cards';
 export* from './cards2';
 export * from './price';
 export * from './discount';
+export* from './viewed-count';
