@@ -6,23 +6,11 @@
     [items]="oneLineCards"
   />
 
-  <app-cards
-    #cardsRef
+  <app-cards-standard
     title="Related to items you've viewed in Books"
     [items]="cards2"
-    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.bottom"
-    [imageFullHeight]="true"
-    [breakpoints]="[
-      { condition: 'min-width 0 and max-width 360', columns: 'repeat(2, 1fr)' },
-      { condition: 'min-width 361 and max-width 580', columns: 'repeat(3, 1fr)' },
-      { condition: 'min-width 581 and max-width 700', columns: 'repeat(4, 1fr)' },
-      { condition: 'min-width 701', columns: 'repeat(4, 1fr)' },
-    ]"
-    defaultColumns="repeat(2, 1fr)"
-    itemsWidth="1fr"
-    linkText="Explore more"
-    linkTextColor="#017185"
   />
+
   <app-cards
     title="Keep shopping for"
     [items]="keepShoppingCards"

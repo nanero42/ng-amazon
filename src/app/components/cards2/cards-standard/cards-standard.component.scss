@@ -1,0 +1,36 @@
+:host { display: contents; }
+
+.cards {
+  background-color: #FFF;
+  padding: 0 10px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.title {
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.image__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEE;
+  height: 150px;
+}
+
+.image {
+  object-fit: contain;
+}
+
+.product__name {
+  height: 40px;
+  padding-bottom: 10px;
+}

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Card, CardsComponent, CardsOneLineComponent, HeaderComponent, SliderComponent } from 'src/app/components';
+import { Card, CardsComponent, CardsOneLineComponent, CardsStandardComponent, HeaderComponent, SliderComponent } from 'src/app/components';
 import { CardComponent } from 'src/app/components/cards/card';
 import { LinkComponent } from 'src/app/components/link';
 
@@ -16,6 +16,7 @@ import { LinkComponent } from 'src/app/components/link';
     LinkComponent,
 
     CardsOneLineComponent,
+    CardsStandardComponent,
   ],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
@@ -147,7 +148,7 @@ export class HomePageComponent {
     {
       id: 'ergh674tgsdg',
       name: 'Web Scalability for Startup Engineers',
-      image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image: 'https://static8.depositphotos.com/1004221/832/i/950/depositphotos_8329452-stock-photo-pile-of-books-on-a.jpg',
       price_int: 39,
       price_cent: 78,
       price_crossed: 55.00,
@@ -156,7 +157,7 @@ export class HomePageComponent {
     },
     {
       id: 'hm7u54rfsdvfu6',
-      name: 'Reconfigurable Transceiver Architectural insights ect ect',
+      name: 'Reconfigurable Transceiver Architectural insights',
       image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 109,
       price_cent: 99,
@@ -165,7 +166,7 @@ export class HomePageComponent {
     },
     {
       id: 'erth6uk54twdf',
-      name: 'ASP.NET Core 6 and Angular: Full-stack web development',
+      name: 'ASP.NET Core 6 and Angular: Full-stack web',
       image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 54,
       price_cent: 99,
@@ -174,7 +175,7 @@ export class HomePageComponent {
     },
     {
       id: 'fgh6uk66sdcbh',
-      name: 'Angular for Enterprise Applications: Build scalable systems etc ect',
+      name: 'Angular for Enterprise Applications: Build',
       image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price_int: 39,
       price_cent: 99,
