@@ -11,9 +11,13 @@ import { CommonModule } from '@angular/common';
 })
 export class LinkComponent {
   private _textColor = '#017185';
+  private _padding = '0 0 18px 0';
 
   @Input() text!: string;
   @Input() imageUrl!: string;
+  @Input()
+  set padding(v: string) { v ? this._padding = v : '' }
+  get padding() { return this._padding }
   @Input()
   set textColor(v: string | undefined) { v ? this._textColor = v : '' }
   get textColor() { return this._textColor }
