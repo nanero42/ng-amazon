@@ -1,0 +1,18 @@
+<div class="cards">
+  <div class="title">{{ title }}</div>
+  <ul class="list">
+
+    <li *ngFor="let item of items" class="item">
+      <div class="container">
+        <div class="image__container">
+          <img [attr.src]="item.image" alt="Product" class="image">
+        </div>
+        <div class="descr">
+          <app-product-title *ngIf="item.name" [title]="item.name" />
+          <app-price [item]="item" />
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</div>

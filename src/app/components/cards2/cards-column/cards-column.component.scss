@@ -1,0 +1,39 @@
+:host { display: contents; }
+
+.title {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.cards {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 6px;
+  background-color: #FFF;
+}
+
+.item {
+  padding-bottom: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.image__container {
+  flex: 30%;
+  margin-right: 10px;
+  background-color: #F7F8F8;
+}
+
+.image {
+  height: 150px;
+  object-fit: contain;
+}
+
+.descr {
+  flex: 70%;
+}

@@ -20,13 +20,11 @@
     linkText="View your browsing historys"
   />
 
-  <app-cards
+  <app-cards-column
     title="Related to items you've viewed"
     [items]="relatedCards"
-    [cardsInfoPlacement]="cardsRef.CardsInfoPlacement.right"
-    [imageFullHeight]="true"
-    itemsWidth="1fr"
   />
+
   <app-cards
     title="Shop deals"
     [items]="shopDealsItem"

@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Card, CardsComponent, CardsOneLineComponent, CardsStandardComponent, HeaderComponent, SliderComponent } from 'src/app/components';
 import { CardComponent } from 'src/app/components/cards/card';
+import { CardsColumnComponent } from 'src/app/components/cards2/cards-column';
 import { LinkComponent } from 'src/app/components/link';
 
 @Component({
@@ -17,6 +18,7 @@ import { LinkComponent } from 'src/app/components/link';
 
     CardsOneLineComponent,
     CardsStandardComponent,
+    CardsColumnComponent,
   ],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
