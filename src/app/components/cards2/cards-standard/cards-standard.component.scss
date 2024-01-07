@@ -3,6 +3,7 @@
 .cards {
   background-color: #FFF;
   padding: 0 10px;
+  margin-bottom: 6px;
 }
 
 .list {
@@ -24,13 +25,9 @@
   justify-content: center;
   background-color: #EEE;
   height: 150px;
+  margin-bottom: 8px;
 }
 
 .image {
   object-fit: contain;
-}
-
-.product__name {
-  height: 40px;
-  padding-bottom: 10px;
 }

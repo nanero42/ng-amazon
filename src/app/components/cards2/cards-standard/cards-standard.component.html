@@ -5,8 +5,10 @@
       <div class="image__container">
         <img class="image" [attr.src]="item.image" alt="Product">
       </div>
-      <div class="product__name">{{ item.name }}</div>
-      <app-price [item]="item" />
+      <app-product-title *ngIf="item.name" [title]="item.name" />
+      <app-price *ngIf="showPrice" [item]="item" />
+      <app-viewed-count *ngIf="showViewedCount && item.viewed_count" [viewedCount]="item.viewed_count" />
     </li>
   </ul>
+  <app-link [text]="linkText" />
 </div>
